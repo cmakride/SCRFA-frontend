@@ -11,6 +11,9 @@ Medium: 500<br />
 
  Added the Color Palette, for time sake, added in each color depending on the row number, for example in tailwind text-row3-5 would be the third row and 5th color to the right so based on the pdf file this would be the red color #E9261D
 
+ ### Friday 06/24/2022:
+ Did a focused hour before had to go into work. Setup the Navbar component, home page component, Installed React Router Dom. Wrapped the App component in Router so NavLinks can work in the Navbar. And Setup basic Navbar styling. Once get back will start to build out the Hamburger Functionality and Search bar drop down. 
+
 
 ## Planning:
 ### 1. ~~Create App and Initialize Tailwind~~
