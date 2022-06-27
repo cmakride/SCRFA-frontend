@@ -1,11 +1,18 @@
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react';
+import HamburgerDropDownMenu from './components/HamburgerDropDownMenu';
 import logo from '../../assets/rfa-logo.png'
 import { FaSearch } from 'react-icons/fa'
 
 const Nav = () => {
 
   const [isNavOpen, setIsNavOpen] = useState(false)
+
+  const closeDropDownMenu = () =>{
+    setIsNavOpen(false)
+  }
+
+
 
   return (
     <>
@@ -20,47 +27,12 @@ const Nav = () => {
             <p className='text-white font-normal font-RobotoCondensed tracking-widest'>MENU</p>
           </div>
 
-          {/* Hamburger Click What will show */}
-          <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
-            <div
-              className="absolute top-0 right-0 px-8 py-8" onClick={() => setIsNavOpen(false)}
-            >
-              <svg
-                className="h-8 w-8 text-gray-600"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
-              </svg>
-            </div>
-
-            <ul className="flex flex-col items-center justify-between min-h-[250px]">
-              <li className="border-b border-gray-400 my-8 uppercase">
-                <NavLink
-                  onClick={() => setIsNavOpen(false)}
-                  to="/"
-                  className="text-xl hover:text-orange-600 duration-300 "
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
-                <NavLink
-                  onClick={() => setIsNavOpen(false)}
-                  to="/"
-                  className="text-xl hover:text-orange-600 duration-300 "
-                >
-                  About Us
-                </NavLink>
-              </li>
-            </ul>
+          {/* Hamburger Drop Down Menu */}
+          <div id={isNavOpen ? "showMenuNav" : "hideMenuNav"} className="border-b-8 border-row1-3">
+            <HamburgerDropDownMenu closeDropDownMenu={closeDropDownMenu}/>
           </div>
           {/* End Hambuger Div */}
+
           <div id="Logo-with-title" className="DESKTOP-MENU hidden space-x-8 lg:flex items-center justify-center">
 
             <NavLink to="/">
@@ -108,15 +80,15 @@ const Nav = () => {
         </div>
 
         <style>{`
-    .hideMenuNav {
+    #hideMenuNav {
       display: none;
     }
-    .showMenuNav {
+    #showMenuNav {
       display: block;
       position: absolute;
       width: 100%;
-      height: 100vh;
-      top: 0;
+      height: 25rem;
+      top: 130px;
       left: 0;
       background: white;
       z-index: 10;
