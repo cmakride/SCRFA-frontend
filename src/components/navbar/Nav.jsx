@@ -7,18 +7,19 @@ const Nav = () => {
 
   return (
     <>
-      <div id = "navbar" className = "flex items-center justify-between border-b p-5 border-gray-400 py-8 bg-white shadow w-full" >
-        <nav>
-          <section className="MOBILE-MENU flex lg:hidden">
-            <div className="HAMBURGER-ICON space-y-2" onClick={() => setIsNavOpen((prev) => !prev)}>
+      <div id = "navbar" className = "flex items-center justify-start border-gray-400 bg-white shadow w-full" >
+        
+          
+            <div className="HAMBURGER-ICON flex flex-col gap-1.5 justify-center items-center bg-row1-4 w-24 h-32" onClick={() => setIsNavOpen((prev) => !prev)}>
 
-              <div className='ml-4 flex flex-col gap-1 justify-center content-center'>
-                <ion-icon size="large" name="wine-outline" ></ion-icon>
+              
+                
 
-                <span className="block h-1 w-8 animate-pulse bg-gray-600"></span>
-                <span className="block h-1 w-8 animate-pulse bg-gray-600"></span>
-                <span className="block h-1 w-8 animate-pulse bg-gray-600"></span>
-              </div>
+                <span className="block h-1 w-11 rounded bg-white"></span>
+                <span className="block h-1 w-11 rounded bg-white"></span>
+                <span className="block h-1 w-11 rounded bg-white"></span>
+                <p className='text-white font-normal font-RobotoCondensed tracking-widest'>MENU</p>
+              
 
             </div>
 
@@ -52,7 +53,7 @@ const Nav = () => {
                 </li>
               </ul>
             </div>
-          </section>
+          
 
           <ul className="DESKTOP-MENU hidden space-x-8 lg:flex items-center justify-center">
 
@@ -71,7 +72,7 @@ const Nav = () => {
               </NavLink>
             </li>
           </ul>
-        </nav>
+        
         <style>{`
     .hideMenuNav {
       display: none;

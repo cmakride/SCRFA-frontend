@@ -7,7 +7,9 @@ module.exports = {
       
       fontFamily:{
         'OpenSans':['"Open Sans"', 'sans-serif'],
-        'RobotoSlab':['"Roboto Slab"','serif']
+        'RobotoSlab':['"Roboto Slab"','serif'],
+        'RobotoCondensed':['"Roboto Condensed"','sans-serif'],
+
       },
       colors: {
         row1: {

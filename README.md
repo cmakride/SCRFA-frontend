@@ -12,13 +12,16 @@ Medium: 500<br />
  Added the Color Palette, for time sake, added in each color depending on the row number, for example in tailwind text-row3-5 would be the third row and 5th color to the right so based on the pdf file this would be the red color #E9261D
 
  ### Friday 06/24/2022:
- Did a focused hour before had to go into work. Setup the Navbar component, home page component, Installed React Router Dom. Wrapped the App component in Router so NavLinks can work in the Navbar. And Setup basic Navbar styling. Once get back will start to build out the Hamburger Functionality and Search bar drop down. 
+ Did a focused hour before had to go into work. Setup the Navbar component, home page component, Installed React Router Dom. Wrapped the App component in Router so NavLinks can work in the Navbar. Wrote first route in App.jsx for "/" which was set to the <Home/> Component. Setup basic Navbar styling. Once get back will start to build out the Hamburger Functionality and Search bar drop down. 
 
 
 ## Planning:
 ### 1. ~~Create App and Initialize Tailwind~~
 ### 2. ~~Add in all the fonts and colors into the class structure of the tailwind.config file~~
 ### 3. Build the Nav Bar Component
+#### 1. Basic Nav Bar
+#### 2. Search and Hamburger Functionality working
+#### 3. Style and links of both search bar and Hamburger
 ### 4. Build the Nav Bar Drop Down Menu
 ### 5. Mobile Responsive Nav Bar
 ### 6. Build the Banner Component, Search and Links to Different Topics
