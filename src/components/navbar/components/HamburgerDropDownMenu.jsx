@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 
-const HamburgerDropDownMenu = ({closeDropDownMenu}) => {
+const HamburgerDropDownMenu = ({ closeDropDownMenu }) => {
   return (
     <>
       <div
@@ -20,26 +20,72 @@ const HamburgerDropDownMenu = ({closeDropDownMenu}) => {
         </svg>
       </div>
 
-      <ul className="flex flex-col items-center justify-between min-h-[250px]">
-        <li className="border-b border-gray-400 my-8 uppercase">
+      <ul id="options" className="bg-row4-7 flex flex-col items-center justify-start gap-5">
+        <li className="mt-4 w-60 pb-3 text-center border-b border-gray-400">
           <NavLink
             onClick={() => closeDropDownMenu()}
             to="/"
-            className="text-xl hover:text-orange-600 duration-300 "
+            className="font-OpenSans font-bold text-xl text-row4-2 hover:text-row3-1 duration-300 "
           >
             Home
           </NavLink>
         </li>
-        <li className="border-b border-gray-400 my-8 uppercase">
+        <li className=" w-60 pb-3 text-center border-b border-gray-400">
           <NavLink
             onClick={() => closeDropDownMenu()}
             to="/"
-            className="text-xl hover:text-orange-600 duration-300 "
+            className="font-OpenSans font-bold text-xl text-row4-2 hover:text-row3-1 duration-300 "
+          >
+            News & Events
+          </NavLink>
+        </li>
+        <li className=" w-60 pb-3 text-center border-b border-gray-400">
+          <NavLink
+            onClick={() => closeDropDownMenu()}
+            to="/"
+            className="font-OpenSans font-bold text-xl text-row4-2 hover:text-row3-1 duration-300 "
           >
             About Us
           </NavLink>
         </li>
+        <li className=" w-60 pb-3 text-center border-b border-gray-400">
+          <NavLink
+            onClick={() => closeDropDownMenu()}
+            to="/"
+            className="font-OpenSans font-bold text-xl text-row4-2 hover:text-row3-1 duration-300 "
+          >
+            Contact Us
+          </NavLink>
+        </li>
+        <li className=" w-60 pb-3 text-center">
+          <NavLink
+            onClick={() => closeDropDownMenu()}
+            to="/"
+            className="font-OpenSans font-bold text-xl text-row4-2 hover:text-row3-1 duration-300 "
+          >
+            Boards & Committees
+          </NavLink>
+        </li>
+        <style>{`
+          #options {
+          grid-area: options;
+          }
+          `}
+        </style>
       </ul>
+
+      <div id='services' className='grid grid-rows-3 grid-cols-3 place-items-center'>
+          <ul>
+            <li>hello</li>
+          </ul>
+
+      <style>{`
+          #services {
+          grid-area: services;
+          }
+          `}
+        </style>
+      </div>
     </>
   );
 }

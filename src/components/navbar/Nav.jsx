@@ -8,7 +8,7 @@ const Nav = () => {
 
   const [isNavOpen, setIsNavOpen] = useState(false)
 
-  const closeDropDownMenu = () =>{
+  const closeDropDownMenu = () => {
     setIsNavOpen(false)
   }
 
@@ -29,7 +29,7 @@ const Nav = () => {
 
           {/* Hamburger Drop Down Menu */}
           <div id={isNavOpen ? "showMenuNav" : "hideMenuNav"} className="border-b-8 border-row1-3">
-            <HamburgerDropDownMenu closeDropDownMenu={closeDropDownMenu}/>
+            <HamburgerDropDownMenu closeDropDownMenu={closeDropDownMenu} />
           </div>
           {/* End Hambuger Div */}
 
@@ -87,15 +87,17 @@ const Nav = () => {
       display: block;
       position: absolute;
       width: 100%;
-      height: 25rem;
+      height: 35rem;
       top: 130px;
       left: 0;
       background: white;
       z-index: 10;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
+      display: grid; 
+      grid-template-columns: 0.4fr 1.1fr; 
+      grid-template-rows: 1fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+      "options services"; 
     }
   `}</style>
       </nav >
