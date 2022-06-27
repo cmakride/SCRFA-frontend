@@ -14,6 +14,9 @@ Medium: 500<br />
  ### Friday 06/24/2022:
  Did a focused hour before had to go into work. Setup the Navbar component, home page component, Installed React Router Dom. Wrapped the App component in Router so NavLinks can work in the Navbar. Wrote first route in App.jsx for "/" which was set to the <Home/> Component. Setup basic Navbar styling. Once get back will start to build out the Hamburger Functionality and Search bar drop down. 
 
+ ### Monday 06/27/2022:
+ Note would do this differently for the setup next time would have created a class in tailwind for each Header shown in the assets.
+
 
 ## Planning:
 ### 1. ~~Create App and Initialize Tailwind~~
