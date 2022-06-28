@@ -81,7 +81,7 @@ const HamburgerDropDownMenu = ({ closeDropDownMenu }) => {
         </style>
       </ul>
 
-      <div id='services' className='grid grid-rows-2 grid-cols-3 place-items-start'>
+      <div id='services' className='grid grid-rows-2 place-items-start md:grid-cols-2 lg:grid-cols-3'>
 
         <DataResearch/>
         <GeographyMapping/>

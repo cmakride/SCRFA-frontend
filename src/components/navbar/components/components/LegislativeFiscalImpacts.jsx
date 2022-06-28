@@ -17,7 +17,7 @@ const LegislativeFiscalImpacts = () => {
   ]
 
   return ( 
-     <ul className='ml-14 mt-7'>
+     <ul className='my-5 mx-5'>
         <li>
           <NavLink
             to="/"

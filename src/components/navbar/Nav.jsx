@@ -51,43 +51,43 @@ const Nav = () => {
           </div>
           {/* End Hambuger Div */}
 
-          <div id="Logo-with-title" className="DESKTOP-MENU hidden space-x-8 lg:flex items-center justify-center">
+          <div id="Logo-with-title" className="flex gap-4 items-center justify-between">
 
             <NavLink to="/">
-              <img src={logo} className="h-28 ml-8 hover:opacity-40 duration-100" alt="" />
+              <img src={logo} className="ml-2 w-14 lg:w-28 lg:ml-8 hover:opacity-40 duration-100" alt="" />
             </NavLink>
 
             <div className="flex flex-col">
-              <p className='font-RobotoSlab font-regular text-xl tracking-wide text-row1-2'>SOUTH CAROLINA</p>
-              <p className='font-RobotoSlab font-regular text-xl tracking-wide text-row1-2'>REVENUE AND FISCAL AFFAIRS OFFICE</p>
-              <p className='font-normal italic font-RobotoCondensed tracking-wide text-row1-6'>Transforming data into solutions for South Carolina</p>
+              <p className='font-RobotoSlab font-regular text-xs xl:text-xl lg:text-lg tracking-wide text-row1-2'>SOUTH CAROLINA</p>
+              <p className='font-RobotoSlab font-regular text-xs xl:text-xl lg:text-lg tracking-wide text-row1-2'>REVENUE AND FISCAL AFFAIRS OFFICE</p>
+              <p className='font-normal hidden lg:block italic font-RobotoCondensed tracking-wide text-sm xl:text-base text-row1-6'>Transforming data into solutions for South Carolina</p>
             </div>
           </div>
         </div>
 
 
 
-        <div id='nav-links' className='flex items-center gap-4 mr-4'>
-          <p className="my-8 uppercase ">
+        <div id='nav-links' className='hidden lg:flex items-center gap-4 mr-4'>
+          <p className="my-8 uppercase text-center">
             <NavLink
               to="/"
-              className="font-normal text-row1-4 text-xl font-RobotoCondensed tracking-widest hover:text-row3-1 duration-300"
+              className="font-normal text-row1-4 xl:text-xl font-RobotoCondensed tracking-widest hover:text-row3-1 duration-300"
             >
               ABOUT US
             </NavLink>
           </p>
-          <p className="my-8 uppercase ">
+          <p className="my-8 uppercase text-center ">
             <NavLink
               to="/"
-              className="font-normal text-row1-4 text-xl font-RobotoCondensed tracking-widest hover:text-row3-1 duration-300"
+              className="font-normal text-row1-4 xl:text-xl font-RobotoCondensed tracking-widest hover:text-row3-1 duration-300"
             >
               EVENTS
             </NavLink>
           </p>
-          <p className="my-8 uppercase ">
+          <p className="my-8 uppercase text-center ">
             <NavLink
               to="/"
-              className="font-normal text-row1-4 text-xl font-RobotoCondensed tracking-widest hover:text-row3-1 duration-300"
+              className="font-normal text-row1-4 xl:text-xl font-RobotoCondensed tracking-widest hover:text-row3-1 duration-300"
             >
               BOARDS & COMMITTEES
             </NavLink>
@@ -115,6 +115,17 @@ const Nav = () => {
       gap: 0px 0px; 
       grid-template-areas: 
       "options services"; 
+    }
+    @media screen and (max-width:640px){
+      #showMenuNav{
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "options"
+        "services"; 
+      }
     }
   `}</style>
       </nav >

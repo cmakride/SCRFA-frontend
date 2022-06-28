@@ -30,7 +30,7 @@ const ProgramsServices = () => {
 
   return ( 
     
-     <ul className='mt-7'>
+     <ul className='my-5 mx-5'>
         <li>
           <NavLink
             to="/"
