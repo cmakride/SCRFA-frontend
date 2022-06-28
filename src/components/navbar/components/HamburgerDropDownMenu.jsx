@@ -1,6 +1,13 @@
 import { NavLink } from 'react-router-dom'
+import DataResearch from './components/DataResearch';
+import GeographyMapping from './components/GeographyMapping';
+import ProgramsServices from './components/ProgramsServices';
+import LegislativeFiscalImpacts from './components/LegislativeFiscalImpacts';
 
 const HamburgerDropDownMenu = ({ closeDropDownMenu }) => {
+
+
+
   return (
     <>
       <div
@@ -74,12 +81,16 @@ const HamburgerDropDownMenu = ({ closeDropDownMenu }) => {
         </style>
       </ul>
 
-      <div id='services' className='grid grid-rows-3 grid-cols-3 place-items-center'>
-          <ul>
-            <li>hello</li>
-          </ul>
+      <div id='services' className='grid grid-rows-2 grid-cols-3 place-items-start'>
 
-      <style>{`
+        <DataResearch/>
+        <GeographyMapping/>
+        <ProgramsServices/>
+        <LegislativeFiscalImpacts/>
+
+
+
+        <style>{`
           #services {
           grid-area: services;
           }

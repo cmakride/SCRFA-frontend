@@ -18,6 +18,7 @@ const Nav = () => {
     <>
       <nav id="navbar" className="flex items-center border-gray-400 bg-white shadow w-full justify-between" >
 
+        {/* Hamburger Drop Down Menu */}
         <div className='flex'>
           <div className="HAMBURGER-ICON flex flex-col gap-1.5 justify-center items-center bg-row1-4 w-24 h-32" onClick={() => setIsNavOpen((prev) => !prev)}>
 
@@ -27,7 +28,6 @@ const Nav = () => {
             <p className='text-white font-normal font-RobotoCondensed tracking-widest'>MENU</p>
           </div>
 
-          {/* Hamburger Drop Down Menu */}
           <div id={isNavOpen ? "showMenuNav" : "hideMenuNav"} className="border-b-8 border-row1-3">
             <HamburgerDropDownMenu closeDropDownMenu={closeDropDownMenu} />
           </div>
@@ -87,7 +87,6 @@ const Nav = () => {
       display: block;
       position: absolute;
       width: 100%;
-      height: 35rem;
       top: 130px;
       left: 0;
       background: white;
