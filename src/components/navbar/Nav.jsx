@@ -107,9 +107,10 @@ const Nav = () => {
     #showSearchNav{
       display: block;
       position: absolute;
-      width: 30%;
-      top: 130px;
-      right: 0;
+      z-index: 15;
+      width: 33%;
+      top: 85px;
+      right: 10px;
 
     }
     #hideSearchNav {
@@ -134,6 +135,11 @@ const Nav = () => {
       grid-template-areas: 
       "options services"; 
     }
+    @media screen and (max-width:1024px){
+      #showSearchNav{
+        width: 320px;
+      }
+    }
     @media screen and (max-width:640px){
       #showMenuNav{
         display: grid; 
@@ -143,6 +149,9 @@ const Nav = () => {
         grid-template-areas: 
         "options"
         "services"; 
+      }
+      #showSearchNav{
+        right: 0px;
       }
     }
   `}</style>
