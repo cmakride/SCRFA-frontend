@@ -29,7 +29,7 @@ After Today another thing if had more time would be to update and tweak the mobi
 
 
 ### Tuesday 06/28/2022:
-Quick hour before work. Fixed the navbar dropdown menu grid cell size issue. Made the dimensions smaller for the first row of that grid display. Next made the search button show on the mobile and tablet on the navbar. Noticed on the 320px there may be some pixelation occuring on the Logo, if have time will look into that. Looks like it just occurs on the 320px. 
+Quick hour before work. Fixed the navbar dropdown menu grid cell size issue. Made the dimensions smaller for the first row of that grid display. Next made the search button show on the mobile and tablet on the navbar. Noticed on the 320px there may be some pixelation occurring on the Logo, if have time will look into that. Looks like it just occurs on the 320px. 
 
 ## Planning:
 ### 1. ~~Create App and Initialize Tailwind~~

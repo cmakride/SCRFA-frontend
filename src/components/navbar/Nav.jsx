@@ -1,12 +1,14 @@
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react';
 import HamburgerDropDownMenu from './components/HamburgerDropDownMenu';
+import SearchDropDownMenu from './components/SearchDropDownMenu';
 import logo from '../../assets/rfa-logo.png'
 import { FaSearch } from 'react-icons/fa'
 
 const Nav = () => {
 
   const [isNavOpen, setIsNavOpen] = useState(false)
+  const [isSearchOpen, setIsSearchOpen] = useState(false)
 
   const closeDropDownMenu = () => {
     setIsNavOpen(false)
@@ -92,12 +94,28 @@ const Nav = () => {
               BOARDS & COMMITTEES
             </NavLink>
           </p>
-          <button className='text-row1-5 flex items-center text-blue justify-center h-10 w-10 border border-row1-5 rounded hover:bg-row1-5 hover:text-white duration-300'>
+          <button onClick={() => setIsSearchOpen((prev) => !prev)} className='text-row1-5 flex items-center text-blue justify-center h-10 w-10 border border-row1-5 rounded hover:bg-row1-5 hover:text-white duration-300'>
             <FaSearch className='text-xl' />
           </button>
+          {/* Search Bar Dropdown */}
+          <div id={isSearchOpen ? "showSearchNav" : "hideSearchNav"} className="">
+            <SearchDropDownMenu />
+          </div>
         </div>
 
         <style>{`
+    #showSearchNav{
+      display: block;
+      position: absolute;
+      width: 30%;
+      top: 130px;
+      right: 0;
+
+    }
+    #hideSearchNav {
+      display: none;
+    }
+
     #hideMenuNav {
       display: none;
     }
