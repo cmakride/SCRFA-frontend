@@ -38,8 +38,8 @@ After Today another thing if had more time would be to update and tweak the mobi
    2. Search and Hamburger Functionality working
    3. Style and links of both search bar and Hamburger
 ### 4. Build the Nav Bar Drop Down Menu
-   1. "Hamburger" Icon to activate the dropdown
-   2. "Cross" Icon to deactivate the dropdown menu
+   1. ~~"Hamburger" Icon to activate the dropdown~~
+   2. ~~"Cross" Icon to deactivate the dropdown menu~~
    3. Make the Hamburger NavBar Drop Down Menu Mobile Responsive
 
 ### 5. Mobile Responsive Nav Bar

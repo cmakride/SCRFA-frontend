@@ -120,7 +120,7 @@ const Nav = () => {
       #showMenuNav{
         display: grid; 
         grid-template-columns: 1fr; 
-        grid-template-rows: 1fr 1fr; 
+        grid-template-rows: 0.7fr 1.3fr; 
         gap: 0px 0px; 
         grid-template-areas: 
         "options"
