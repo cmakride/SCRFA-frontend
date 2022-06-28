@@ -67,8 +67,8 @@ const Nav = () => {
 
 
 
-        <div id='nav-links' className='hidden lg:flex items-center gap-4 mr-4'>
-          <p className="my-8 uppercase text-center">
+        <div id='nav-links' className='flex items-center gap-4 mr-4'>
+          <p className="hidden lg:flex my-8 uppercase text-center">
             <NavLink
               to="/"
               className="font-normal text-row1-4 xl:text-xl font-RobotoCondensed tracking-widest hover:text-row3-1 duration-300"
@@ -76,7 +76,7 @@ const Nav = () => {
               ABOUT US
             </NavLink>
           </p>
-          <p className="my-8 uppercase text-center ">
+          <p className="hidden lg:flex my-8 uppercase text-center ">
             <NavLink
               to="/"
               className="font-normal text-row1-4 xl:text-xl font-RobotoCondensed tracking-widest hover:text-row3-1 duration-300"
@@ -84,7 +84,7 @@ const Nav = () => {
               EVENTS
             </NavLink>
           </p>
-          <p className="my-8 uppercase text-center ">
+          <p className="hidden lg:flex my-8 uppercase text-center ">
             <NavLink
               to="/"
               className="font-normal text-row1-4 xl:text-xl font-RobotoCondensed tracking-widest hover:text-row3-1 duration-300"
