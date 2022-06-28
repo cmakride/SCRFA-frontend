@@ -20,12 +20,30 @@ const Nav = () => {
 
         {/* Hamburger Drop Down Menu */}
         <div className='flex'>
-          <div className="HAMBURGER-ICON flex flex-col gap-1.5 justify-center items-center bg-row1-4 w-24 h-32" onClick={() => setIsNavOpen((prev) => !prev)}>
-
-            <span className="block h-1 w-11 rounded bg-white"></span>
-            <span className="block h-1 w-11 rounded bg-white"></span>
-            <span className="block h-1 w-11 rounded bg-white"></span>
-            <p className='text-white font-normal font-RobotoCondensed tracking-widest'>MENU</p>
+          <div className="HAMBURGER-ICON flex flex-col gap-1.5 justify-center items-center bg-row1-4 w-24 h-32 hover:bg-row1-3" onClick={() => setIsNavOpen((prev) => !prev)}>
+            {isNavOpen ?
+              <>
+                <svg
+                  className="h-16 w-16 text-white"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+                <p className='text-white font-normal font-RobotoCondensed tracking-widest'>CLOSE</p>
+              </>
+              :
+              <>
+                <span className="block h-1 w-11 rounded bg-white"></span>
+                <span className="block h-1 w-11 rounded bg-white"></span>
+                <span className="block h-1 w-11 rounded bg-white"></span>
+                <p className='text-white font-normal font-RobotoCondensed tracking-widest'>MENU</p>
+              </>}
           </div>
 
           <div id={isNavOpen ? "showMenuNav" : "hideMenuNav"} className="border-b-8 border-row1-3">
