@@ -29,7 +29,7 @@ After Today another thing if had more time would be to update and tweak the mobi
 
 
 ### Tuesday 06/28/2022:
-Spent an hour and a half before work. Fixed the navbar dropdown menu grid cell size issue. Made the dimensions smaller for the first row of that grid display. Next made the search button show on the mobile and tablet on the navbar. Noticed on the 320px there may be some pixelation occurring on the Logo, if have time will look into that. Looks like it just occurs on the 320px.
+Spent an hour and a half before work. Fixed the navbar dropdown menu grid cell size issue. Made the dimensions smaller for the first cell of that grid display. Next made the search button show on the mobile and tablet on the navbar. Noticed on the 320px there may be some pixelation occurring on the Logo, if have time will look into that. Looks like it just occurs on the 320px.
 With the search bar planning on putting the form data in state, and will be updated as the user types in either search bar.
 Got the search button to dispay a search bar when clicked. Have to do styling on the search bar to match the Guide. 
 Finished off the morning doing media queries for the Searchbar Dropdown 1024px and 640px. 

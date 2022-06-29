@@ -98,7 +98,7 @@ const Nav = () => {
             <FaSearch className='text-xl' />
           </button>
           {/* Search Bar Dropdown */}
-          <div id={isSearchOpen ? "showSearchNav" : "hideSearchNav"} className="">
+          <div id={isSearchOpen ? "showSearchNav" : "hideSearchNav"}>
             <SearchDropDownMenu />
           </div>
         </div>
@@ -137,7 +137,7 @@ const Nav = () => {
     }
     @media screen and (max-width:1024px){
       #showSearchNav{
-        width: 320px;
+        width: 420px;
       }
     }
     @media screen and (max-width:640px){
@@ -148,10 +148,12 @@ const Nav = () => {
         gap: 0px 0px; 
         grid-template-areas: 
         "options"
-        "services"; 
+        "services";
+        
       }
       #showSearchNav{
         right: 0px;
+        width: 320px;
       }
     }
   `}</style>
