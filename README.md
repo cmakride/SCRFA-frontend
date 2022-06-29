@@ -41,7 +41,7 @@ Tomorrow first task will be to style the SearchBar Drop down.
 ### 3. ~~Build the Nav Bar Component~~
    1. ~~Basic Nav Bar~~
    2. ~~Search and Hamburger Functionality working~~
-   3. Style and links of both search bar and Hamburger
+   3. ~~Style and links of both search bar and Hamburger~~
 ### 4. ~~Build the Nav Bar Drop Down Menu~~
    1. ~~"Hamburger" Icon to activate the dropdown~~
    2. ~~"Cross" Icon to deactivate the dropdown menu~~

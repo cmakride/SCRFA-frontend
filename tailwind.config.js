@@ -7,7 +7,7 @@ module.exports = {
 
       backgroundImage: {
 
-        'logo': "url('./assets/rfa-logo.png')"
+        'banner': "url('./assets/banner.jpg')"
         
 
       },
