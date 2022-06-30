@@ -1,4 +1,5 @@
 import Banner from "../../components/banner/Banner";
+import Categories from "../../components/categories/Categories";
 import Footer from "../../components/footer/Footer";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
 
         <main className="flex flex-col flex-grow items-center mb-5">
           <Banner />
+          <Categories/>
 
         </main>
         <Footer />
