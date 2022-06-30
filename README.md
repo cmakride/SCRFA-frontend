@@ -35,6 +35,8 @@ Got the search button to dispay a search bar when clicked. Have to do styling on
 Finished off the morning doing media queries for the Searchbar Dropdown 1024px and 640px. 
 Tomorrow first task will be to style the SearchBar Drop down.
 
+### Wednesday 06/29/2022:
+
 ## Planning:
 ### 1. ~~Create App and Initialize Tailwind~~
 ### 2. ~~Add in all the fonts and colors into the class structure of the tailwind.config file~~
