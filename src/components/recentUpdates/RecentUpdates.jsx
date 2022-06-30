@@ -1,5 +1,5 @@
-import { NavLink } from 'react-router-dom'
 import UpdateCard from './components/UpdateCard';
+import HeaderStyle2 from '../headers/HeaderStyle2';
 
 const RecentUpdates = () => {
   const recentUpdates = [
@@ -37,6 +37,7 @@ const RecentUpdates = () => {
   return (
 
     <div className="text-row1-5 text-md md:text-lg flex flex-col justify-start items-start gap-6">
+      <HeaderStyle2 text="Recent Updates"/>
       {recentUpdates.map((update) => (
         <UpdateCard update={update} />
       ))}
