@@ -1,5 +1,6 @@
 import UpdateCard from './components/UpdateCard';
 import HeaderStyle2 from '../headers/HeaderStyle2';
+import BlueButton from '../buttons/BlueButton';
 
 const RecentUpdates = () => {
   const recentUpdates = [
@@ -41,6 +42,7 @@ const RecentUpdates = () => {
       {recentUpdates.map((update) => (
         <UpdateCard update={update} />
       ))}
+      <BlueButton text="VIEW MORE"/>
     </div>
 
   );
