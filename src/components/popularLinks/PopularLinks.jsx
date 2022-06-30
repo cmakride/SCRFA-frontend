@@ -7,7 +7,7 @@ const PopularLinks = () => {
         <h1 className="text-3xl self-start">POPULAR SERVICES AND LINKS</h1>
         <span className="block h-2 w-full bg-row1-2"></span>
 
-        <div className="my-7 grid w-full grid-rows-1 grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-10 text-row1-5 font-semibold text-lg underline underline-offset-1">
+        <div className="my-7 grid w-full grid-rows-1 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-10 text-row1-5 font-semibold text-lg underline underline-offset-1">
 
           <div className="bg-white flex flex-col justify-start items-start gap-6">
             <NavLink
