@@ -10,7 +10,7 @@ const Categories = () => {
     <>
       <div className='bg-row4-7 w-full flex justify-center items-center font-OpenSans font-bold tracking-wider text-row1-2 text-center'>
 
-        <div className="my-6 flex flex-col gap-6 max-w-screen-2xl">
+        <div className="my-6 flex flex-col flex-wrap md:w-11/12 md:flex-row gap-6 lg:gap-10 max-w-screen-2xl justify-center items-center">
 
           <div className="bg-white h-64 w-64 shadow flex justify-center items-center">
             <div className="w-1/2 flex flex-col justify-center items-center gap-4">
