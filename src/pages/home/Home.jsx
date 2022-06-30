@@ -15,7 +15,7 @@ const Home = () => {
           <Categories />
           <div className="mx-10 max-w-screen-2xl">
             <PopularLinks />
-            <div className="mt-8 font-OpenSans grid w-full grid-rows-1 grid-cols-1 md:grid-cols-2">
+            <div className="mt-8 font-OpenSans grid w-full grid-rows-1 grid-cols-1 md:grid-cols-2 gap-8">
               <RecentUpdates />
               <Calendar />
 
