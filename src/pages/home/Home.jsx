@@ -11,7 +11,7 @@ const Home = () => {
         <main className="flex flex-col flex-grow items-center mb-5">
           <Banner />
           <Categories />
-          <div className="ml-10">
+          <div className="mx-10 max-w-screen-2xl">
           <PopularLinks />
 
           </div>
