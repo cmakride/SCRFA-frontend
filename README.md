@@ -48,12 +48,12 @@ Tomorrow first task will be to style the SearchBar Drop down.
    3. ~~Make the Hamburger NavBar Drop Down Menu Mobile Responsive~~
 
 ### 5. ~~Mobile Responsive Nav Bar~~
-### 6. Build the Banner Component, Search and Links to Different Topics
-### 7. Mobile Responsive Banner
+### 6. ~~Build the Banner Component, Search and Links to Different Topics~~
+### 7. ~~Mobile Responsive Banner~~
 ### 8. Build Popular Services And Links Component
 ### 9. Popular Services and Links Mobile Responsive
 ### 10. Recent Updates and Calendar of Events Component
 ### 11. Recent Updates and Calendar of Events Mobile Responsive
 ### 12. Back To Top Button will automatically scroll up
 ### 13. Footer
-### 14. Footer Mobile Responsive# SCRFA-frontend
+### 14. Footer Mobile Responsive
