@@ -12,7 +12,7 @@ Medium: 500<br />
  Added the Color Palette, for time sake, added in each color depending on the row number, for example in tailwind text-row3-5 would be the third row and 5th color to the right so based on the pdf file this would be the red color #E9261D
 
  ### Friday 06/24/2022:
- Did a focused hour before had to go into work. Setup the Navbar component, home page component, Installed React Router Dom. Wrapped the App component in Router so NavLinks can work in the Navbar. Wrote first route in App.jsx for "/" which was set to the <Home/> Component. Setup basic Navbar styling. Once get back will start to build out the Hamburger Functionality and Search bar drop down. 
+ Did a focused hour before had to go into work. Setup the Navbar component, home page component, Installed React Router Dom. Wrapped the App component in Router so NavLinks can work in the Navbar. Wrote first route in App.jsx for "/" which was set to the Home Component. Setup basic Navbar styling. Once get back will start to build out the Hamburger Functionality and Search bar drop down. 
 
  ### Monday 06/27/2022:
  Today was a productive day. Had to work this past weekend so today was the first "full day" focusing on the project. Started at about 11-12 with building and styling the NavBar as it would look when a user first arrives on the site. This took about an hour-hour and a half. Next goal was to get the Navbar functional and styled fully for Desktop. This included building the "hamburger" Icon to display a dropdown menu when clicked. This was done using React's "useState". The Dropdown menu was made into a component and there are additional components for each services category, Data&Research, Geography&Mapping etc... I did this to try and make it easier to understand and follow the code. This took about 1 hour and a half - 2 hours. It is 8:30 now, am going to take a small break and come back to try and complete the "hamburger" menu dropdown specifically when click on the dropdown the "hamburger" turns into a cross to represent closing the menu. I want to make the dropdown menu mobile responsive before the night ends.  Goals are icon change when the navbar menu is activated and mobile responsive for the dropdown menu. 
@@ -36,6 +36,21 @@ Finished off the morning doing media queries for the Searchbar Dropdown 1024px a
 Tomorrow first task will be to style the SearchBar Drop down.
 
 ### Wednesday 06/29/2022:
+9:00am-10:20am: Did the styling for the search bar dropdown. In desktop the width is 30% in tablet it is 420px and on phone it is 320px on the smallest screen 320px will take up the entire width, which I think looks sufficient for that size. For time want to move on to other contents of the page, the navbar is complete. Moving onto banner and search. 
+
+10:20am-11:30am built the banner with background image of the capitol building. With the text and a search bar. Made a component for the search bar. 
+
+11:30am-12:00pm was spent doing Media Queries for the Banner on mobile and tablet
+
+Notes to add: Would make distinct media queries built into tailwind for small 320px, 420px, 520, etc… Would also change the small medium and large fonts in tailwind to match the sizes in the Guide.
+
+Came back at night started at
+8:30pm-9:10pm started the footer component and got it to display at the bottom of the page, had to do a little research on an effective way to do that in tailwind. 
+
+9:10pm-9:47pm Built out the footer component and styled it. Used grid and flex in tailwind
+
+9:47pm-10:13pm Styled the footer component for mobile and tablet, took out the addresses/locations part on small and medium screens, only shows up on large screens, used mainly grid to do the media queries, 2 columns for mobile and tablet, 3 columns for large screen. Text Size Changes as well. Small on mobile/tablet, goes to large on desktop
+
 
 ## Planning:
 ### 1. ~~Create App and Initialize Tailwind~~
@@ -57,5 +72,5 @@ Tomorrow first task will be to style the SearchBar Drop down.
 ### 10. Recent Updates and Calendar of Events Component
 ### 11. Recent Updates and Calendar of Events Mobile Responsive
 ### 12. Back To Top Button will automatically scroll up
-### 13. Footer
-### 14. Footer Mobile Responsive
+### 13. ~~Footer~~
+### 14. ~~Footer Mobile Responsive~~
