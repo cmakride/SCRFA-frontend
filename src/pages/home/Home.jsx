@@ -4,6 +4,7 @@ import PopularLinks from "../../components/popularLinks/PopularLinks";
 import RecentUpdates from "../../components/recentUpdates/RecentUpdates";
 import Calendar from "../../components/calendar/Calendar";
 import Footer from "../../components/footer/Footer";
+import TopButton from "../../components/buttons/TopButton";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
               <Calendar />
 
             </div>
+              <TopButton/>
 
           </div>
 
