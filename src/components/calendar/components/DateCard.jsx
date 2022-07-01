@@ -2,14 +2,14 @@ import { FaMapMarkerAlt, FaRegClock, FaRegAddressBook } from 'react-icons/fa'
 
 const DateCard = ({ date }) => {
   return (
-    <div className='flex items-start gap-6'>
+    <div className='flex items-start gap-6 border-b-2'>
 
       <div className='bg-row3-1 text-row3-4 h-22 w-22 flex flex-col text-center p-4'>
         <p>{date.month}</p>
         <p className='font-bold text-3xl'>{date.day}</p>
       </div>
 
-      <div className="flex flex-col gap-1 border-b-2">
+      <div className="flex flex-col gap-1">
         {date.tag ?
           <>
             {date.tag === "Updated" &&

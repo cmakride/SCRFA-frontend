@@ -51,6 +51,21 @@ Came back at night started at
 
 9:47pm-10:13pm Styled the footer component for mobile and tablet, took out the addresses/locations part on small and medium screens, only shows up on large screens, used mainly grid to do the media queries, 2 columns for mobile and tablet, 3 columns for large screen. Text Size Changes as well. Small on mobile/tablet, goes to large on desktop
 
+### Thursday 06/30/2022:
+
+2:00pm-3:00pm created the categories component and basic styling for mobile tablet and desktop. There is a hover effect on each card to scale up by 10%. Also want to look at the Nav bar font sizes noticed they seem a little off in Medium Size Screens. For time, going to move on to make the “Popular Services and Links” component. 
+
+3:00pm-4:11pm created and styled the Popular Links Component with styling for desktop, tablet and mobile. 
+Deployed the site today on netlify noticed on Safari the search bars do not match what show on Chrome or Firefox. 
+Took an hour break
+
+At about 5:00-6:15 started building out the Recent Updates Component and the Calendar Component. Within each component there is an additional component one named UpdateCard and another DateCard. This will make code more readable as have an array of objects representing the information to populate each RecentUpdate or each Calendar Date. Made a grid of two columns for desktop and tablet, then it goes to just one column on mobile. 
+
+6:15-6:38 built out the Recently updated component and Calendar, to make it more efficient made a Header 2 component representing the styling for Header 2 on the guide. Also made a button component. These two components will be used in both the Recent Updates and Calendar. 
+
+6:38-8:00 built and finished the Calendar Component this included the CalendarCard. Styled this for desktop, mobile, and tablet. 
+
+
 
 ## Planning:
 ### 1. ~~Create App and Initialize Tailwind~~
@@ -67,10 +82,10 @@ Came back at night started at
 ### 5. ~~Mobile Responsive Nav Bar~~
 ### 6. ~~Build the Banner Component, Search and Links to Different Topics~~
 ### 7. ~~Mobile Responsive Banner~~
-### 8. Build Popular Services And Links Component
-### 9. Popular Services and Links Mobile Responsive
-### 10. Recent Updates and Calendar of Events Component
-### 11. Recent Updates and Calendar of Events Mobile Responsive
+### 8. ~~Build Popular Services And Links Component~~
+### 9. ~~Popular Services and Links Mobile Responsive~~
+### 10. ~~Recent Updates and Calendar of Events Component~~
+### 11. ~~Recent Updates and Calendar of Events Mobile Responsive~~
 ### 12. Back To Top Button will automatically scroll up
 ### 13. ~~Footer~~
 ### 14. ~~Footer Mobile Responsive~~
