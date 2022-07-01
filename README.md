@@ -69,13 +69,13 @@ At about 5:00-6:15 started building out the Recent Updates Component and the Cal
 8:00am-8:10am Did some style updates to calendar and "exit navbar drop down button".
 8:10am-8:50am built the "Back to Top Button" component, styled it as well.
 
-### Future Updates Going Forward 07/01/2022:
+### Future Updates Going Forward:
 1. Noticed the search bars when on Mobile specifically on safari the styling does not match the styling when building on desktop. Think it may have to do with Tailwind on mobile. I would look into this, and see if it can be fixed or make the styling better for those specifications  
 2. I would keep tweaking and updating the styling and responsiveness of the app. Specifically the media queries for mobile. Would want to add a size in tailwind for extra small, medium small, and large small etc… 
 3. Would look over the guide again to check the font sizes make sure they are correct
 4. Would try and convert the logo into an SVG if possible
 5. Add an animation for the dropdown navbar to slide down when the hamburger icon is clicked, this is an effect that can be done in tailwind
- 
+6. Build out a backend server for calendar events would use express and Mongodb, make functionality to add an event
 
 
 ## Planning:
