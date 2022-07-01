@@ -2,7 +2,7 @@ import { FaMapMarkerAlt, FaRegClock, FaRegAddressBook } from 'react-icons/fa'
 
 const DateCard = ({ date }) => {
   return (
-    <div className='flex items-start gap-6 border-b-2'>
+    <div className='flex items-start gap-6 border-b-2 pb-2'>
 
       <div className='bg-row3-1 text-row3-4 h-22 w-22 flex flex-col text-center p-4'>
         <p>{date.month}</p>

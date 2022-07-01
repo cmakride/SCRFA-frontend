@@ -11,7 +11,7 @@ const HamburgerDropDownMenu = ({ closeDropDownMenu }) => {
   return (
     <>
       <div
-        className="absolute top-0 right-0 px-8 py-8" onClick={() => closeDropDownMenu()}
+        className="absolute bottom-0 right-0 px-8 py-8 lg:top-0" onClick={() => closeDropDownMenu()}
       >
         <svg
           className="h-8 w-8 text-gray-600"
