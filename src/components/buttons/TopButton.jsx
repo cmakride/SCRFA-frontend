@@ -9,22 +9,7 @@ const TopButton = () => {
       behavior: 'smooth',
     })
   }
-  // ? way to make the button visible at a certain amount down the page
-  // const [isVisible, setIsVisible] = useState(false)
-  // const toggleVisibility = () => {
-  //   if (window.pageYOffset > 300) {
-  //     setIsVisible(true)
-  //   } else {
-  //     setIsVisible(false)
-  //   }
-  // }
-  // useEffect(() => {
-  //   window.addEventListener('scroll', toggleVisibility)
 
-  //   return () => {
-  //     window.removeEventListener('scroll', toggleVisibility)
-  //   }
-  // }, [])
 
   return (
     <>
