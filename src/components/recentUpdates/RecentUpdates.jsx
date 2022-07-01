@@ -39,8 +39,8 @@ const RecentUpdates = () => {
 
     <div className="text-row1-5 text-md md:text-lg flex flex-col justify-start items-start gap-6">
       <HeaderStyle2 text="Recent Updates"/>
-      {recentUpdates.map((update) => (
-        <UpdateCard update={update} />
+      {recentUpdates.map((update,idx) => (
+        <UpdateCard key={idx} update={update} />
       ))}
       <BlueButton text="VIEW MORE"/>
     </div>

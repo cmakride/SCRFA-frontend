@@ -43,8 +43,8 @@ const Calendar = () => {
 
     <div className="text-row1-5 text-md md:text-lg flex flex-col justify-start items-start gap-6">
       <HeaderStyle2 text="Calendar of Events" />
-      {events.map((date) => (
-        <DateCard date={date} />
+      {events.map((date,idx) => (
+        <DateCard key={idx} date={date} />
       ))}
       <BlueButton text="VIEW ALL EVENTS" />
     </div>
