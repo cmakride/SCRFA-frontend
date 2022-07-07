@@ -119,7 +119,6 @@ At about 5:00-6:15 started building out the Recent Updates Component and the Cal
 1.Nice README with markdown<br/>
 2.Nice to see tailwind CSS<br/>
 3.Great to see use of git/github and a good number of commits with decent commit descriptions.<br/>
-#### What will do next time is make new branches for each new feature to simulate real work environment.
 4.Great to see hosting/CI used. <br/>
 Good to see test framework in place but just the one test defined and it fails.<br/>
 Good to see custom page title and favicon.<br/>
@@ -128,7 +127,7 @@ Minor issue with the top navigation (About Us, etc) not rendering on Chrome but 
 Nice touch with Data & Research blocks responding to hover.<br/>
 Good to see menu button responds to open.<br/>
 ### Layout of mega-menu is good based on the current content but I see a potential issue with layout flow if there were more unevenly sized  categories. Also the tab order doesn’t flow from Data & Research to Legislative Fiscal Impacts. Is this referring to only in mobile? 
-#### what going to do is create a grid 3 col by 2 rows on large, 2 col 2 row on medium, will set the values to each grid. Did grid for mobile first this evenly shows the categories when they are all in one collumn and centered with place content center<br/>
+<br/>
 ~~Would prefer the mega-menu categories to used CSS text transform rather than relying on the format of the content. This led to some discrepancies in the case of categories with the implementation.~~<br/>
 Good to see seal responds to hover.<br/>
 Good to see tab order of Popular Services and Links is arranged as columns, often a missed aspect of the design.<br/>
@@ -142,7 +141,7 @@ Good breakdown of components. Would like to see components made more reusable. F
 Similarly, lots of repetitive boilerplate in the footer. This could be extracted into content/data and rendered as a repeatable generic component.
 
 Good use of javascript but would have preferred to see TypeScript.
-CSS could use some cleanup, used App-logo class.
+~~CSS could use some cleanup, used App-logo class.~~
 Breakdown of components and page is great, good to see page is mostly just a collection of components.
 Overall a strong submission. Some areas for improvement.
 
