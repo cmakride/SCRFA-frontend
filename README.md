@@ -126,17 +126,21 @@ Good to see custom page title and favicon.<br/>
 Overall good page layout as desktop dimensions.<br/>
 Minor issue with the top navigation (About Us, etc) not rendering on Chrome but I do see it on FireFox. Maybe a bug with my current version of Chrome since the issue is not presenting on Chrome Canary.<br/>
 Nice touch with Data & Research blocks responding to hover.<br/>
-Good to see menu button responds to open.
+Good to see menu button responds to open.<br/>
 ### Layout of mega-menu is good based on the current content but I see a potential issue with layout flow if there were more unevenly sized  categories. Also the tab order doesn’t flow from Data & Research to Legislative Fiscal Impacts.
-#### what going to do is create a grid 3 col by 2 rows on large, 2 col 2 row on medium, will set the values to each grid
-Would prefer the mega-menu categories to used CSS text transform rather than relying on the format of the content. This led to some discrepancies in the case of categories with the implementation.
-Good to see seal responds to hover.
-Good to see tab order of Popular Services and Links is arranged as columns, often a missed aspect of the design.
-Lighthouse score for accessibility is only OK (82).
-Good to see Back to Top is functional and implemented with JS.
-Responsive aspects are very good. Good judgement used towards making things fit and flow appropriately. Could use some additional refinement around navigation to make something that fits better from a practical perspective on mobile.
+#### what going to do is create a grid 3 col by 2 rows on large, 2 col 2 row on medium, will set the values to each grid. Did grid for mobile first this evenly shows the categories when they are all in one collumn and centered with place content center<br/>
+~~Would prefer the mega-menu categories to used CSS text transform rather than relying on the format of the content. This led to some discrepancies in the case of categories with the implementation.~~<br/>
+Good to see seal responds to hover.<br/>
+Good to see tab order of Popular Services and Links is arranged as columns, often a missed aspect of the design.<br/>
+Lighthouse score for accessibility is only OK (82).<br/>
+Good to see Back to Top is functional and implemented with JS.<br/>
+
+Responsive aspects are very good. Good judgement used towards making things fit and flow appropriately. Could use some additional refinement around navigation to make something that fits better from a practical perspective on mobile.<br/>
+
 Good breakdown of components. Would like to see components made more reusable. For example the navbar sub-components have a lot of content embedded. I would prefer to see this content abstracted and more generic components used to render with more re-use.
+
 Similarly, lots of repetitive boilerplate in the footer. This could be extracted into content/data and rendered as a repeatable generic component.
+
 Good use of javascript but would have preferred to see TypeScript.
 CSS could use some cleanup, used App-logo class.
 Breakdown of components and page is great, good to see page is mostly just a collection of components.
@@ -148,3 +152,4 @@ Overall a strong submission. Some areas for improvement.
 3. Fix Search Bars on Mobile. 
 4. Make components from what says in the feedback
 5. Animation for Drop down Menu
+6. tweak responsiveness on nav menu

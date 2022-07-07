@@ -12,20 +12,17 @@ const PopularLinks = () => {
           <div className="bg-white flex flex-col justify-start items-start gap-6">
             <NavLink
               to="/"
-              className=""
             >
-              Overview and History of the South<br/>
+              Overview and History of the South<br />
               Carolina State Budget
             </NavLink>
             <NavLink
               to="/"
-              className=""
             >
               Employer Contribution Trends
             </NavLink>
             <NavLink
               to="/"
-              className=""
             >
               Appropriation Bills and Acts
             </NavLink>
@@ -34,23 +31,20 @@ const PopularLinks = () => {
           <div className="bg-white flex flex-col justify-start items-start gap-6">
             <NavLink
               to="/"
-              className=""
             >
-              Overview and History of the South<br/>
+              Overview and History of the South<br />
               Carolina State Budget
             </NavLink>
             <NavLink
               to="/"
-              className=""
             >
               Employer Contribution Trends - June 4,
               2019
             </NavLink>
             <NavLink
               to="/"
-              className=""
             >
-              Executive Budget Office<br/>
+              Executive Budget Office<br />
               State Agency Budget Plans(Requests)
             </NavLink>
 
@@ -58,23 +52,20 @@ const PopularLinks = () => {
           <div className="bg-white flex flex-col justify-start items-start gap-6">
             <NavLink
               to="/"
-              className=""
             >
-              Overview and History of the South<br/>
+              Overview and History of the South<br />
               Carolina State Budget
             </NavLink>
             <NavLink
               to="/"
-              className=""
             >
               Employer Contribution Trends - June 4,
               2019
             </NavLink>
             <NavLink
               to="/"
-              className=""
             >
-             Executive Budget Office<br/>
+              Executive Budget Office<br />
               State Agency Budget Plans(Requests)
             </NavLink>
 
