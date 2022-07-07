@@ -151,7 +151,7 @@ Overall a strong submission. Some areas for improvement.
 3. Fix Search Bars on Mobile. 
 4. Make components from what says in the feedback
 5. Animation for Drop down Menu
-6. tweak responsiveness on nav menu
+6. ~~tweak responsiveness on nav menu~~
 
 
 
