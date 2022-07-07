@@ -127,7 +127,7 @@ Overall good page layout as desktop dimensions.<br/>
 Minor issue with the top navigation (About Us, etc) not rendering on Chrome but I do see it on FireFox. Maybe a bug with my current version of Chrome since the issue is not presenting on Chrome Canary.<br/>
 Nice touch with Data & Research blocks responding to hover.<br/>
 Good to see menu button responds to open.<br/>
-### Layout of mega-menu is good based on the current content but I see a potential issue with layout flow if there were more unevenly sized  categories. Also the tab order doesn’t flow from Data & Research to Legislative Fiscal Impacts.
+### Layout of mega-menu is good based on the current content but I see a potential issue with layout flow if there were more unevenly sized  categories. Also the tab order doesn’t flow from Data & Research to Legislative Fiscal Impacts. Is this referring to only in mobile? 
 #### what going to do is create a grid 3 col by 2 rows on large, 2 col 2 row on medium, will set the values to each grid. Did grid for mobile first this evenly shows the categories when they are all in one collumn and centered with place content center<br/>
 ~~Would prefer the mega-menu categories to used CSS text transform rather than relying on the format of the content. This led to some discrepancies in the case of categories with the implementation.~~<br/>
 Good to see seal responds to hover.<br/>
@@ -153,3 +153,6 @@ Overall a strong submission. Some areas for improvement.
 4. Make components from what says in the feedback
 5. Animation for Drop down Menu
 6. tweak responsiveness on nav menu
+
+
+

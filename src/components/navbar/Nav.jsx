@@ -18,7 +18,7 @@ const Nav = () => {
 
   return (
     <>
-      <nav id="navbar" className="flex items-center border-gray-400 bg-white shadow w-full justify-between" >
+      <nav id="navbar" className="flex items-center bg-white shadow w-full justify-between" >
 
         {/* Hamburger Drop Down Menu */}
         <div className='flex'>
@@ -59,37 +59,34 @@ const Nav = () => {
               <img src={logo} className="ml-2 w-14 lg:w-28 lg:ml-8 hover:opacity-40 duration-100" alt="" />
             </NavLink>
 
-            <div className="flex flex-col">
-              <p className='font-RobotoSlab font-regular text-xs xl:text-xl lg:text-lg tracking-wide text-row1-2'>SOUTH CAROLINA</p>
-              <p className='font-RobotoSlab font-regular text-xs xl:text-xl lg:text-lg tracking-wide text-row1-2'>REVENUE AND FISCAL AFFAIRS OFFICE</p>
-              <p className='font-normal hidden lg:block italic font-RobotoCondensed tracking-wide text-sm xl:text-base text-row1-6'>Transforming data into solutions for South Carolina</p>
+            <div className="flex flex-col font-RobotoSlab font-normal text-xs md:text-base xl:text-xl  tracking-wide text-row1-2">
+              <p className=''>SOUTH CAROLINA</p>
+              <p className=''>REVENUE AND FISCAL AFFAIRS OFFICE</p>
+              <p className='hidden lg:block italic font-RobotoCondensed text-sm xl:text-base text-row1-6'>Transforming data into solutions for South Carolina</p>
             </div>
           </div>
         </div>
 
 
 
-        <div id='nav-links' className='flex items-center gap-4 mr-4'>
-          <p className="hidden lg:flex my-8 uppercase text-center">
+        <div id='nav-links' className='font-normal text-row1-4 text-sm lg:text-base xl:text-xl font-RobotoCondensed tracking-widest flex items-center gap-4 mr-4 uppercase my-8'>
+          <p className="hidden md:flex text-center hover:text-row3-1 duration-300">
             <NavLink
               to="/"
-              className="font-normal text-row1-4 xl:text-xl font-RobotoCondensed tracking-widest hover:text-row3-1 duration-300"
             >
               ABOUT US
             </NavLink>
           </p>
-          <p className="hidden lg:flex my-8 uppercase text-center ">
+          <p className="hidden md:flex text-center hover:text-row3-1 duration-300">
             <NavLink
               to="/"
-              className="font-normal text-row1-4 xl:text-xl font-RobotoCondensed tracking-widest hover:text-row3-1 duration-300"
             >
               EVENTS
             </NavLink>
           </p>
-          <p className="hidden lg:flex my-8 uppercase text-center ">
+          <p className="hidden md:flex text-center hover:text-row3-1 duration-300">
             <NavLink
               to="/"
-              className="font-normal text-row1-4 xl:text-xl font-RobotoCondensed tracking-widest hover:text-row3-1 duration-300"
             >
               BOARDS & COMMITTEES
             </NavLink>
