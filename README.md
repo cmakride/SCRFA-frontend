@@ -114,3 +114,37 @@ At about 5:00-6:15 started building out the Recent Updates Component and the Cal
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
+
+### Feedback:
+1.Nice README with markdown<br/>
+2.Nice to see tailwind CSS<br/>
+3.Great to see use of git/github and a good number of commits with decent commit descriptions.<br/>
+#### What will do next time is make new branches for each new feature to simulate real work environment.
+4.Great to see hosting/CI used. <br/>
+Good to see test framework in place but just the one test defined and it fails.<br/>
+Good to see custom page title and favicon.<br/>
+Overall good page layout as desktop dimensions.<br/>
+Minor issue with the top navigation (About Us, etc) not rendering on Chrome but I do see it on FireFox. Maybe a bug with my current version of Chrome since the issue is not presenting on Chrome Canary.<br/>
+Nice touch with Data & Research blocks responding to hover.<br/>
+Good to see menu button responds to open.
+### Layout of mega-menu is good based on the current content but I see a potential issue with layout flow if there were more unevenly sized  categories. Also the tab order doesn’t flow from Data & Research to Legislative Fiscal Impacts.
+#### what going to do is create a grid 3 col by 2 rows on large, 2 col 2 row on medium, will set the values to each grid
+Would prefer the mega-menu categories to used CSS text transform rather than relying on the format of the content. This led to some discrepancies in the case of categories with the implementation.
+Good to see seal responds to hover.
+Good to see tab order of Popular Services and Links is arranged as columns, often a missed aspect of the design.
+Lighthouse score for accessibility is only OK (82).
+Good to see Back to Top is functional and implemented with JS.
+Responsive aspects are very good. Good judgement used towards making things fit and flow appropriately. Could use some additional refinement around navigation to make something that fits better from a practical perspective on mobile.
+Good breakdown of components. Would like to see components made more reusable. For example the navbar sub-components have a lot of content embedded. I would prefer to see this content abstracted and more generic components used to render with more re-use.
+Similarly, lots of repetitive boilerplate in the footer. This could be extracted into content/data and rendered as a repeatable generic component.
+Good use of javascript but would have preferred to see TypeScript.
+CSS could use some cleanup, used App-logo class.
+Breakdown of components and page is great, good to see page is mostly just a collection of components.
+Overall a strong submission. Some areas for improvement.
+
+#### 
+1. Once get back will update nav dropdown mobile menu for grid styling maybe do flex col normally and grid on desktop. 
+2. Make the banner hover icons 2X2 grid on medium 
+3. Fix Search Bars on Mobile. 
+4. Make components from what says in the feedback
+5. Animation for Drop down Menu

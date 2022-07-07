@@ -81,21 +81,21 @@ const HamburgerDropDownMenu = ({ closeDropDownMenu }) => {
         </style>
       </ul>
 
-      <div id='services' className='grid grid-rows-2 place-items-start md:grid-cols-2 lg:grid-cols-3'>
+      <div className='grid place-content-center'>
+        <div id='services' className='grid md:grid md:grid-rows-2 place-items-start md:grid-cols-2 lg:grid-cols-3'>
 
-        <DataResearch/>
-        <GeographyMapping/>
-        <ProgramsServices/>
-        <LegislativeFiscalImpacts/>
+          <DataResearch />
+          <GeographyMapping />
+          <ProgramsServices />
+          <LegislativeFiscalImpacts />
 
-
-
-        <style>{`
+          <style>{`
           #services {
           grid-area: services;
           }
           `}
-        </style>
+          </style>
+        </div>
       </div>
     </>
   );
