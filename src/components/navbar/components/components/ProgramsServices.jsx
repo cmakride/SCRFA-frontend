@@ -3,27 +3,27 @@ import { NavLink } from 'react-router-dom'
 const ProgramsServices = () => {
   const programsServices = [
     {
-      name: "Precinct Demographics and Redistricting",
+      name: "precinct demographics and redistricting",
       link: "/"
     },
     {
-      name: "State 911 Program",
+      name: "state 911 program",
       link: "/"
     },
     {
-      name: "Data Services and Online Solutions",
+      name: "data services and online solutions",
       link: "/"
     },
     {
-      name: "Geodetic Survey",
+      name: "geodetic survey",
       link: "/"
     },
     {
-      name: "Fiscal Analysis",
+      name: "fiscal analysis",
       link: "/"
     },
     {
-      name: "2020 Census",
+      name: "2020 census",
       link: "/"
     }
   ]
@@ -34,8 +34,8 @@ const ProgramsServices = () => {
         <li>
           <NavLink
             to="/"
-            className="font-OpenSans font-bold text-xl text-row1-3 hover:text-row3-1 duration-300 mb-4">
-            Programs & Services
+            className="uppercase font-OpenSans font-bold text-xl text-row1-3 hover:text-row3-1 duration-300 mb-4">
+            programs & services
           </NavLink>
         </li>
         <span className="block h-1 w-16 mt-1.5 mb-4 bg-row3-1"></span>
@@ -43,7 +43,7 @@ const ProgramsServices = () => {
           <li key={idx}>
             <NavLink
               to="/"
-              className="font-OpenSans font-regular text-xl text-row4-4 hover:text-row3-1 duration-300">
+              className="capitalize font-OpenSans font-regular text-xl text-row4-4 hover:text-row3-1 duration-300">
               {service.name}
             </NavLink>
           </li>

@@ -3,35 +3,35 @@ import { NavLink } from 'react-router-dom'
 const DataResearch = () => {
   const dataResearch = [
     {
-      name: "Economy",
+      name: "economy",
       link: "/"
     },
     {
-      name: "State Finances",
+      name: "state finances",
       link: "/"
     },
     {
-      name: "Education",
+      name: "education",
       link: "/"
     },
     {
-      name: "Healthcare",
+      name: "healthcare",
       link: "/"
     },
     {
-      name: "Local Government",
+      name: "local government",
       link: "/"
     },
     {
-      name: "Population and Demographics",
+      name: "population and demographics",
       link: "/"
     },
     {
-      name: "State Register Calculations",
+      name: "state register calculations",
       link: "/"
     },
     {
-      name: "Presentations",
+      name: "presentations",
       link: "/"
     },
   ]
@@ -42,8 +42,8 @@ const DataResearch = () => {
       <li>
         <NavLink
           to="/"
-          className="font-OpenSans font-bold text-xl text-row1-3 hover:text-row3-1 duration-300 mb-4">
-          DATA & RESEARCH
+          className="uppercase font-OpenSans font-bold text-xl text-row1-3 hover:text-row3-1 duration-300 mb-4">
+          data & research
         </NavLink>
       </li>
       <span className="block h-1 w-16 mt-1.5 mb-4 bg-row3-1"></span>
@@ -51,7 +51,7 @@ const DataResearch = () => {
         <li key={idx}>
           <NavLink
             to="/"
-            className="font-OpenSans font-regular text-xl text-row4-4 hover:text-row3-1 duration-300">
+            className="capitalize font-OpenSans font-regular text-xl text-row4-4 hover:text-row3-1 duration-300">
             {service.name}
           </NavLink>
         </li>

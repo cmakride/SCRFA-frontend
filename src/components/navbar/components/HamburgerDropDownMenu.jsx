@@ -11,7 +11,7 @@ const HamburgerDropDownMenu = ({ closeDropDownMenu }) => {
   return (
     <>
       <div
-        className="absolute bottom-0 right-0 px-8 py-5 lg:top-0" onClick={() => closeDropDownMenu()}
+        className="absolute bottom-0 right-0 px-8 py-5 xl:top-0" onClick={() => closeDropDownMenu()}
       >
         <svg
           className="h-8 w-8 text-gray-600"
@@ -27,48 +27,43 @@ const HamburgerDropDownMenu = ({ closeDropDownMenu }) => {
         </svg>
       </div>
 
-      <ul id="options" className="bg-row4-7 flex flex-col items-center justify-start gap-5">
-        <li className="mt-4 w-60 pb-3 text-center border-b border-gray-400">
+      <ul id="options" className="bg-row4-7 flex flex-col items-center justify-start gap-5 xl:gap-10 font-OpenSans font-bold text-xl xl:text-2xl text-row4-2 text-center">
+        <li className="mt-4 w-60 pb-3 border-b border-gray-400 hover:text-row3-1 duration-300">
           <NavLink
             onClick={() => closeDropDownMenu()}
             to="/"
-            className="font-OpenSans font-bold text-xl text-row4-2 hover:text-row3-1 duration-300 "
           >
             Home
           </NavLink>
         </li>
-        <li className=" w-60 pb-3 text-center border-b border-gray-400">
+        <li className=" w-60 pb-3 border-b border-gray-400 hover:text-row3-1 duration-300">
           <NavLink
             onClick={() => closeDropDownMenu()}
             to="/"
-            className="font-OpenSans font-bold text-xl text-row4-2 hover:text-row3-1 duration-300 "
           >
             News & Events
           </NavLink>
         </li>
-        <li className=" w-60 pb-3 text-center border-b border-gray-400">
+        <li className=" w-60 pb-3 border-b border-gray-400 hover:text-row3-1 duration-300">
           <NavLink
             onClick={() => closeDropDownMenu()}
             to="/"
-            className="font-OpenSans font-bold text-xl text-row4-2 hover:text-row3-1 duration-300 "
           >
             About Us
           </NavLink>
         </li>
-        <li className=" w-60 pb-3 text-center border-b border-gray-400">
+        <li className=" w-60 pb-3 text-center border-b border-gray-400 hover:text-row3-1 duration-300">
           <NavLink
             onClick={() => closeDropDownMenu()}
             to="/"
-            className="font-OpenSans font-bold text-xl text-row4-2 hover:text-row3-1 duration-300 "
           >
             Contact Us
           </NavLink>
         </li>
-        <li className=" w-60 pb-3 text-center">
+        <li className=" w-60 pb-3 text-center hover:text-row3-1 duration-300">
           <NavLink
             onClick={() => closeDropDownMenu()}
             to="/"
-            className="font-OpenSans font-bold text-xl text-row4-2 hover:text-row3-1 duration-300 "
           >
             Boards & Committees
           </NavLink>

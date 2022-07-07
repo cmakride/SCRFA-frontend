@@ -143,7 +143,7 @@ Breakdown of components and page is great, good to see page is mostly just a col
 Overall a strong submission. Some areas for improvement.
 
 #### 
-1. Once get back will update nav dropdown mobile menu for grid styling maybe do flex col normally and grid on desktop. 
+1. ~~Once get back will update nav dropdown mobile menu for grid styling maybe do flex col normally and grid on desktop.~~
 2. Make the banner hover icons 2X2 grid on medium 
 3. Fix Search Bars on Mobile. 
 4. Make components from what says in the feedback
