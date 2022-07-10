@@ -123,7 +123,10 @@ At about 5:00-6:15 started building out the Recent Updates Component and the Cal
 3. Fix Search Bars on Mobile. 
 4. ~~Make components from what says in the feedback~~
 5. Animation for Drop down Menu
-6. ~~tweak responsiveness on nav menu~~
+6. search bar dropdown full screen for all mobile not just at 320px
+7. ~~tweak responsiveness on nav menu~~
+
+once back implement the component in DataResearchMobile.jsx the component on tailwind is called Responsive Collapse
 
 
 
