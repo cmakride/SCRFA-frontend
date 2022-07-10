@@ -69,13 +69,6 @@ At about 5:00-6:15 started building out the Recent Updates Component and the Cal
 8:00am-8:10am Did some style updates to calendar and "exit navbar drop down button".
 8:10am-8:50am built the "Back to Top Button" component, styled it as well.
 
-### Future Updates Going Forward:
-1. Noticed the search bars when on Mobile specifically on safari the styling does not match the styling when building on desktop. Think it may have to do with Tailwind on mobile. I would look into this, and see if it can be fixed or make the styling better for those specifications  
-2. I would keep tweaking and updating the styling and responsiveness of the app. Specifically the media queries for mobile. Would want to add a size in tailwind for extra small, medium small, and large small etc… 
-3. Would look over the guide again to check the font sizes make sure they are correct
-4. Would try and convert the logo into an SVG if possible
-5. Add an animation for the dropdown navbar to slide down when the hamburger icon is clicked, this is an effect that can be done in tailwind
-6. Build out a backend server for calendar events would use express and Mongodb, make functionality to add an event
 
 
 ## Planning:
@@ -115,41 +108,20 @@ At about 5:00-6:15 started building out the Recent Updates Component and the Cal
 
 ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 
-### Feedback:
-1.Nice README with markdown<br/>
-2.Nice to see tailwind CSS<br/>
-3.Great to see use of git/github and a good number of commits with decent commit descriptions.<br/>
-4.Great to see hosting/CI used. <br/>
-Good to see test framework in place but just the one test defined and it fails.<br/>
-Good to see custom page title and favicon.<br/>
-Overall good page layout as desktop dimensions.<br/>
-Minor issue with the top navigation (About Us, etc) not rendering on Chrome but I do see it on FireFox. Maybe a bug with my current version of Chrome since the issue is not presenting on Chrome Canary.<br/>
-Nice touch with Data & Research blocks responding to hover.<br/>
-Good to see menu button responds to open.<br/>
-### Layout of mega-menu is good based on the current content but I see a potential issue with layout flow if there were more unevenly sized  categories. Also the tab order doesn’t flow from Data & Research to Legislative Fiscal Impacts. Is this referring to only in mobile? 
-<br/>
-~~Would prefer the mega-menu categories to used CSS text transform rather than relying on the format of the content. This led to some discrepancies in the case of categories with the implementation.~~<br/>
-Good to see seal responds to hover.<br/>
-Good to see tab order of Popular Services and Links is arranged as columns, often a missed aspect of the design.<br/>
-Lighthouse score for accessibility is only OK (82).<br/>
-Good to see Back to Top is functional and implemented with JS.<br/>
-
-Responsive aspects are very good. Good judgement used towards making things fit and flow appropriately. Could use some additional refinement around navigation to make something that fits better from a practical perspective on mobile.<br/>
-
-Good breakdown of components. Would like to see components made more reusable. For example the navbar sub-components have a lot of content embedded. I would prefer to see this content abstracted and more generic components used to render with more re-use.
-
-Similarly, lots of repetitive boilerplate in the footer. This could be extracted into content/data and rendered as a repeatable generic component.
-
-Good use of javascript but would have preferred to see TypeScript.
-~~CSS could use some cleanup, used App-logo class.~~
-Breakdown of components and page is great, good to see page is mostly just a collection of components.
-Overall a strong submission. Some areas for improvement.
+### Future Updates Going Forward:
+1. ~~Noticed the search bars when on Mobile specifically on safari the styling does not match the styling when building on desktop. Think it may have to do with Tailwind on mobile. I would look into this, and see if it can be fixed or make the styling better for those specifications~~  
+2. I would keep tweaking and updating the styling and responsiveness of the app. Specifically the media queries for mobile. Would want to add a size in tailwind for extra small, medium small, and large small etc… 
+3. Would look over the guide again to check the font sizes make sure they are correct
+4. Would try and convert the logo into an SVG if possible
+5. Add an animation for the dropdown navbar to slide down when the hamburger icon is clicked, this is an effect that can be done in tailwind
+6. Build out a backend server for calendar events would use express and Mongodb, make functionality to add an event
+7. for the megamenu on mobile have a different version one where can click on each category and the links drop down. A more suitable navbar dropdown for mobile devices
 
 #### 
 1. ~~Once get back will update nav dropdown mobile menu for grid styling maybe do flex col normally and grid on desktop.~~
 2. Make the banner hover icons 2X2 grid on medium 
 3. Fix Search Bars on Mobile. 
-4. Make components from what says in the feedback
+4. ~~Make components from what says in the feedback~~
 5. Animation for Drop down Menu
 6. ~~tweak responsiveness on nav menu~~
 
