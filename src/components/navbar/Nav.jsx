@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react';
 import HamburgerDropDownMenu from './components/HamburgerDropDownMenu';
+import HamburgerMobileDropDownMenu from './components/HamburgerMobileDropDownMenu';
 import SearchDropDownMenu from './components/SearchDropDownMenu';
 import logo from '../../assets/rfa-logo.png'
 import { FaSearch } from 'react-icons/fa'
@@ -50,6 +51,10 @@ const Nav = () => {
 
           <div id={isNavOpen ? "showMenuNav" : "hideMenuNav"} className="border-b-8 border-row1-3">
             <HamburgerDropDownMenu closeDropDownMenu={closeDropDownMenu} />
+          </div>
+          {/* Only to be shown on Mobile Devices */}
+          <div id={isNavOpen ? "showMobileMenuNav" : "hideMenuNav"} className="border-b-8 border-row1-3">
+            <HamburgerMobileDropDownMenu closeDropDownMenu={closeDropDownMenu} />
           </div>
           {/* End Hambuger Div */}
 
@@ -110,6 +115,10 @@ const Nav = () => {
       right: 10px;
 
     }
+    #showMobileMenuNav{
+      display:block;
+
+    }
     #hideSearchNav {
       display: none;
     }
@@ -139,18 +148,17 @@ const Nav = () => {
     }
     @media screen and (max-width:640px){
       #showMenuNav{
-        display: grid; 
-        grid-template-columns: 1fr; 
-        grid-template-rows: 0.7fr 1.3fr; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-        "options"
-        "services";
+        display: none; 
         
       }
       #showSearchNav{
         right: 0px;
         width: 320px;
+      }
+    }
+    @media screen and (min-width:640px){
+      #showMobileMenuNav{
+        display: none;
       }
     }
   `}</style>
