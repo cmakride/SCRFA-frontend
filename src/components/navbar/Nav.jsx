@@ -53,7 +53,8 @@ const Nav = () => {
             <HamburgerDropDownMenu closeDropDownMenu={closeDropDownMenu} />
           </div>
           {/* Only to be shown on Mobile Devices */}
-          <div id={isNavOpen ? "showMobileMenuNav" : "hideMenuNav"} className="">
+          <div id={isNavOpen ? "showMobileMenuNav" : "hideMobileMenuNav"} className={`top-[127px] left-0 w-full h-0 bg-row1-3 text-black absolute z-10
+      `}>
             <HamburgerMobileDropDownMenu isNavOpen={isNavOpen} closeDropDownMenu={closeDropDownMenu} />
           </div>
           {/* End Hambuger Div */}
@@ -116,7 +117,10 @@ const Nav = () => {
 
     }
     #showMobileMenuNav{
-      display:block;
+      display:flex;
+      height: 24rem;
+      overflow: hidden;
+      transition: height 0.3s;
 
     }
     #hideSearchNav {
@@ -125,6 +129,11 @@ const Nav = () => {
 
     #hideMenuNav {
       display: none;
+    }
+    #hideMobileMenuNav{
+      overflow: hidden;
+      height: 0px;
+      transition: height 0.3s;
     }
     #showMenuNav {
       display: block;
@@ -158,6 +167,9 @@ const Nav = () => {
     }
     @media screen and (min-width:640px){
       #showMobileMenuNav{
+        display: none;
+      }
+      #hideMobileMenuNav{
         display: none;
       }
     }
