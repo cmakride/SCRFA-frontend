@@ -23,7 +23,7 @@ const Nav = () => {
 
         {/* Hamburger Drop Down Menu */}
         <div className='flex'>
-          <div className="HAMBURGER-ICON flex flex-col gap-1.5 justify-center items-center bg-row1-4 w-24 h-32 hover:bg-row1-3" onClick={() => setIsNavOpen((prev) => !prev)}>
+          <div className="select-none HAMBURGER-ICON flex flex-col gap-1.5 justify-center items-center bg-row1-4 w-24 h-32 hover:bg-row1-3" onClick={() => setIsNavOpen((prev) => !prev)}>
             {isNavOpen ?
               <>
                 <svg
@@ -53,12 +53,12 @@ const Nav = () => {
             <HamburgerDropDownMenu closeDropDownMenu={closeDropDownMenu} />
           </div>
           {/* Only to be shown on Mobile Devices */}
-          <div id={isNavOpen ? "showMobileMenuNav" : "hideMenuNav"} className="border-b-8 border-row1-3">
-            <HamburgerMobileDropDownMenu closeDropDownMenu={closeDropDownMenu} />
+          <div id={isNavOpen ? "showMobileMenuNav" : "hideMenuNav"} className="">
+            <HamburgerMobileDropDownMenu isNavOpen={isNavOpen} closeDropDownMenu={closeDropDownMenu} />
           </div>
           {/* End Hambuger Div */}
 
-          <div id="Logo-with-title" className="flex gap-4 items-center justify-between">
+          <div id="Logo-with-title" className="select-none flex gap-4 items-center justify-between">
 
             <NavLink to="/">
               <img src={logo} className="ml-2 w-14 lg:w-28 lg:ml-8 hover:opacity-40 duration-100" alt="" />
