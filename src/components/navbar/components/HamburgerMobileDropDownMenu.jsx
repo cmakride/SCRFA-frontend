@@ -1,5 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import DataResearchMobile from './components/DataResearchMobile';
+import GeographicMappingMobile from './components/GeographyMappingMobile';
+import { useState } from 'react';
 
 const HamburgerMobileDropDownMenu = ({ closeDropDownMenu, isNavOpen }) => {
   const options = [
@@ -26,6 +28,20 @@ const HamburgerMobileDropDownMenu = ({ closeDropDownMenu, isNavOpen }) => {
 
   ]
 
+  const [dropDownDR, setDropDownDR] = useState(false);
+  const [dropDownGM, setDropDownGM] = useState(false);
+
+  const toggleDropDownDR = ()=>{
+    setDropDownGM(false)
+    setDropDownDR(!dropDownDR)
+  }
+
+
+  const toggleDropDownGM = ()=>{
+    setDropDownDR(false)
+    setDropDownGM(!dropDownGM)
+  }
+
 
 
   return (
@@ -43,7 +59,9 @@ const HamburgerMobileDropDownMenu = ({ closeDropDownMenu, isNavOpen }) => {
             </NavLink>
           </p>
         ))}
-        <DataResearchMobile/>
+        <DataResearchMobile dropDownDR={dropDownDR} toggleDropDownDR={toggleDropDownDR}/>
+        <GeographicMappingMobile dropDownGM={dropDownGM}
+        toggleDropDownGM={toggleDropDownGM}/>
 
       </div>
 

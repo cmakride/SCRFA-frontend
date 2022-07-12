@@ -1,61 +1,53 @@
 import { NavLink } from 'react-router-dom'
 import { BiDownArrow } from 'react-icons/bi'
 
-const DataResearchMobile = ({dropDownDR, toggleDropDownDR}) => {
-  const dataResearch = [
+const GeographicMappingMobile = ({ dropDownGM, toggleDropDownGM }) => {
+  const geographyMapping = [
     {
-      name: "economy",
+      name: "transportation carrier network (uber)",
       link: "/"
     },
     {
-      name: "state finances",
+      name: "SC real time network",
       link: "/"
     },
     {
-      name: "education",
+      name: "SC state GIS",
       link: "/"
     },
     {
-      name: "healthcare",
+      name: "maps",
       link: "/"
     },
     {
-      name: "local government",
+      name: "interactive mapping",
       link: "/"
     },
     {
-      name: "population and demographics",
+      name: "statewide aerial imagery",
       link: "/"
-    },
-    {
-      name: "state register calculations",
-      link: "/"
-    },
-    {
-      name: "presentations",
-      link: "/"
-    },
+    }
   ]
 
-  
+
 
   return (
 
     <>
       <div id="dropdown-wrapper" className='' >
         <button type="button"
-          onClick={() => toggleDropDownDR()} className="flex items-center w-full capitalize font-OpenSans text-xl font-bold text-row1-3"
+          onClick={() => toggleDropDownGM()} className="flex items-center w-full capitalize font-OpenSans text-xl font-bold text-row1-3"
         >
-          data & research
-          <BiDownArrow className={`w-5 h-5 -rotate-90 transition-transform ease-in-out ${dropDownDR ? "rotate-0" : "-rotate-90"}`} />
+          geography & mapping
+          <BiDownArrow className={`w-5 h-5 -rotate-90 transition-transform ease-in-out ${dropDownGM ? "rotate-0" : "-rotate-90"}`} />
         </button>
 
-        {dropDownDR &&
+        {dropDownGM &&
 
           <div id='dropdown' className='p-2 flex flex-col'>
 
             {/* <span className="block h-1 w-16 mt-1.5 mb-4 bg-row3-1"></span> */}
-            {dataResearch.map((service, idx) => (
+            {geographyMapping.map((service, idx) => (
               <p >
                 <NavLink
                   key={idx}
@@ -98,4 +90,4 @@ const DataResearchMobile = ({dropDownDR, toggleDropDownDR}) => {
   );
 }
 
-export default DataResearchMobile;
+export default GeographicMappingMobile;

@@ -10,6 +10,7 @@ const Nav = () => {
 
   const [isNavOpen, setIsNavOpen] = useState(false)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
+  
 
   const closeDropDownMenu = () => {
     setIsNavOpen(false)
@@ -118,7 +119,7 @@ const Nav = () => {
     }
     #showMobileMenuNav{
       display:flex;
-      height: 25rem;
+      height: 42rem;
       overflow: hidden;
       transition: height 0.3s;
 
