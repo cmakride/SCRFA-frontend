@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import DataResearchMobile from './components/DataResearchMobile';
 import GeographicMappingMobile from './components/GeographyMappingMobile';
+import LegislativeFiscalImpactsMobile from './components/LegislativeFiscalImpactsMobile';
 import { useState } from 'react';
 
 const HamburgerMobileDropDownMenu = ({ closeDropDownMenu, isNavOpen }) => {
@@ -30,16 +31,25 @@ const HamburgerMobileDropDownMenu = ({ closeDropDownMenu, isNavOpen }) => {
 
   const [dropDownDR, setDropDownDR] = useState(false);
   const [dropDownGM, setDropDownGM] = useState(false);
+  const [dropDownLFI, setDropDownLFI] = useState(false);
 
   const toggleDropDownDR = ()=>{
     setDropDownGM(false)
+    setDropDownLFI(false)
     setDropDownDR(!dropDownDR)
   }
 
 
   const toggleDropDownGM = ()=>{
     setDropDownDR(false)
+    setDropDownLFI(false)
     setDropDownGM(!dropDownGM)
+  }
+
+  const toggleDropDownLFI = ()=>{
+    setDropDownDR(false)
+    setDropDownGM(false)
+    setDropDownLFI(!dropDownLFI)
   }
 
 
@@ -62,6 +72,7 @@ const HamburgerMobileDropDownMenu = ({ closeDropDownMenu, isNavOpen }) => {
         <DataResearchMobile dropDownDR={dropDownDR} toggleDropDownDR={toggleDropDownDR}/>
         <GeographicMappingMobile dropDownGM={dropDownGM}
         toggleDropDownGM={toggleDropDownGM}/>
+        <LegislativeFiscalImpactsMobile dropDownLFI={dropDownLFI} toggleDropDownLFI={toggleDropDownLFI}/> 
 
       </div>
 
