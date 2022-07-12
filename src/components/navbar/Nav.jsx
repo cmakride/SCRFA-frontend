@@ -53,7 +53,7 @@ const Nav = () => {
             <HamburgerDropDownMenu closeDropDownMenu={closeDropDownMenu} />
           </div>
           {/* Only to be shown on Mobile Devices */}
-          <div id={isNavOpen ? "showMobileMenuNav" : "hideMobileMenuNav"} className={`top-[127px] left-0 w-full h-0 bg-row1-3 text-black absolute z-10
+          <div id={isNavOpen ? "showMobileMenuNav" : "hideMobileMenuNav"} className={`top-[127px] left-0 w-full h-0 bg-row4-7 absolute z-10
       `}>
             <HamburgerMobileDropDownMenu isNavOpen={isNavOpen} closeDropDownMenu={closeDropDownMenu} />
           </div>
@@ -118,7 +118,7 @@ const Nav = () => {
     }
     #showMobileMenuNav{
       display:flex;
-      height: 24rem;
+      height: 25rem;
       overflow: hidden;
       transition: height 0.3s;
 

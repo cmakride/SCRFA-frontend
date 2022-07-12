@@ -30,10 +30,20 @@ const HamburgerMobileDropDownMenu = ({ closeDropDownMenu, isNavOpen }) => {
 
   return (
     <>
-      <div className='flex flex-col'>
-
-        <h1>Hello</h1>
-        <h1>Yess</h1>
+      <div className='text-row4-2 text-lg pl-5 pt-5 w-full flex flex-col justify-start items-start capitalize font-bold gap-1'>
+        {options.map((option, idx) => (
+          <p
+            key={idx}
+            className="w-60 border-b-2 border-gray-400 hover:text-row3-1 duration-300">
+            <NavLink
+              onClick={() => closeDropDownMenu()}
+              to={option.link}
+            >
+              {option.name}
+            </NavLink>
+          </p>
+        ))}
+        <DataResearchMobile/>
 
       </div>
 
