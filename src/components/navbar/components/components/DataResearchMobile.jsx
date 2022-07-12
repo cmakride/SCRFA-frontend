@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { BiDownArrow } from 'react-icons/bi'
 
-const DataResearchMobile = ({dropDownDR, toggleDropDownDR}) => {
+const DataResearchMobile = ({ dropDownDR, toggleDropDownDR }) => {
   const dataResearch = [
     {
       name: "economy",
@@ -37,14 +37,14 @@ const DataResearchMobile = ({dropDownDR, toggleDropDownDR}) => {
     },
   ]
 
-  
+
 
   return (
 
     <>
       <div id="dropdown-wrapper" className='' >
         <button type="button"
-          onClick={() => toggleDropDownDR()} className="flex items-center w-full capitalize font-OpenSans text-xl font-bold text-row1-3"
+          onClick={() => toggleDropDownDR()} className="flex items-center w-full capitalize text-xl font-bold text-row1-3"
         >
           data & research
           <BiDownArrow className={`w-5 h-5 -rotate-90 transition-transform ease-in-out ${dropDownDR ? "rotate-0" : "-rotate-90"}`} />
@@ -52,23 +52,18 @@ const DataResearchMobile = ({dropDownDR, toggleDropDownDR}) => {
 
         {dropDownDR &&
 
-          <div id='dropdown' className='p-2 flex flex-col'>
-
-            {/* <span className="block h-1 w-16 mt-1.5 mb-4 bg-row3-1"></span> */}
+          <div id='dropdown' className='text-row4-2 bg-row4-7 capitalize p-2 flex flex-col'>
             {dataResearch.map((service, idx) => (
               <p >
                 <NavLink
                   key={idx}
                   to="/"
-                  className="capitalize text-row4-4 hover:text-row3-1 duration-300">
+                  className="hover:text-row3-1 duration-300">
                   {service.name}
                 </NavLink>
               </p>
             ))}
           </div>
-
-
-
         }
       </div>
       <style>
@@ -79,17 +74,12 @@ const DataResearchMobile = ({dropDownDR, toggleDropDownDR}) => {
           overflow: visible;
         }
         #dropdown-wrapper #dropdown {
-          
-          background: #fff;
           width: 100%;
-          
           position: absolute;
           top: 27px;
           left: 0;
           z-index: 20;
         }
-        
-        
         `}
       </style>
 

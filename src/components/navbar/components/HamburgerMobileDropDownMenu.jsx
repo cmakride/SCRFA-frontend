@@ -46,7 +46,7 @@ const HamburgerMobileDropDownMenu = ({ closeDropDownMenu, isNavOpen }) => {
 
   return (
     <>
-      <div className='text-row4-2 text-lg pl-5 pt-5 w-full flex flex-col justify-start items-start capitalize font-bold gap-1'>
+      <div className='text-row4-2 text-lg pl-5 pt-5 w-full flex flex-col justify-start items-start capitalize font-bold gap-2'>
         {options.map((option, idx) => (
           <p
             key={idx}

@@ -122,9 +122,10 @@ At about 5:00-6:15 started building out the Recent Updates Component and the Cal
 2. Make the banner hover icons 2X2 grid on medium 
 3. Fix Search Bars on Mobile. 
 4. ~~Make components from what says in the feedback~~
-5. Animation for Drop down Menu
+5. ~~Animation for Drop down Menu mobile~~
 6. search bar dropdown full screen for all mobile not just at 320px
 7. ~~tweak responsiveness on nav menu~~
+ 
 
 
 
