@@ -6,6 +6,30 @@ import LegislativeFiscalImpacts from './components/LegislativeFiscalImpacts';
 
 const HamburgerDropDownMenu = ({ closeDropDownMenu }) => {
 
+  const options = [
+    {
+      link: "/",
+      name: "home"
+    },
+    {
+      link: "/",
+      name: "news & events"
+    },
+    {
+      link: "/",
+      name: "about us"
+    },
+    {
+      link: "/",
+      name: "contact us"
+    },
+    {
+      link: "/",
+      name: "boards & committees"
+    },
+
+  ]
+
 
 
   return (
@@ -27,57 +51,32 @@ const HamburgerDropDownMenu = ({ closeDropDownMenu }) => {
         </svg>
       </div>
 
-      <ul id="options" className="bg-row4-7 flex flex-col items-center justify-start gap-5 xl:gap-10 font-OpenSans font-bold text-xl xl:text-2xl text-row4-2 text-center">
-        <li className="mt-4 w-60 pb-3 border-b border-gray-400 hover:text-row3-1 duration-300">
-          <NavLink
-            onClick={() => closeDropDownMenu()}
-            to="/"
-          >
-            Home
-          </NavLink>
-        </li>
-        <li className=" w-60 pb-3 border-b border-gray-400 hover:text-row3-1 duration-300">
-          <NavLink
-            onClick={() => closeDropDownMenu()}
-            to="/"
-          >
-            News & Events
-          </NavLink>
-        </li>
-        <li className=" w-60 pb-3 border-b border-gray-400 hover:text-row3-1 duration-300">
-          <NavLink
-            onClick={() => closeDropDownMenu()}
-            to="/"
-          >
-            About Us
-          </NavLink>
-        </li>
-        <li className=" w-60 pb-3 text-center border-b border-gray-400 hover:text-row3-1 duration-300">
-          <NavLink
-            onClick={() => closeDropDownMenu()}
-            to="/"
-          >
-            Contact Us
-          </NavLink>
-        </li>
-        <li className=" w-60 pb-3 text-center hover:text-row3-1 duration-300">
-          <NavLink
-            onClick={() => closeDropDownMenu()}
-            to="/"
-          >
-            Boards & Committees
-          </NavLink>
-        </li>
+      <div id="options" className="w-full grid bg-row4-7 font-OpenSans font-bold text-xl xl:text-2xl text-row4-2 text-center">
+        <ul className='justify-self-center'>
+          {options.map((option, idx) => (
+            <li 
+            key={idx}
+            className="capitalize mt-4 w-60 pb-3 border-b border-gray-400 hover:text-row3-1 duration-300">
+              <NavLink
+                onClick={() => closeDropDownMenu()}
+                to={option.link}
+              >
+                {option.name}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+
         <style>{`
           #options {
           grid-area: options;
           }
           `}
         </style>
-      </ul>
+      </div>
 
       <div className='grid place-content-center'>
-        <div id='services' className='grid md:grid md:grid-rows-2 place-items-start md:grid-cols-2 lg:grid-cols-3'>
+        <div id='services' className='grid md:grid-rows-2 place-items-start md:grid-cols-2 lg:grid-cols-3'>
 
           <DataResearch />
           <GeographyMapping />
@@ -92,6 +91,7 @@ const HamburgerDropDownMenu = ({ closeDropDownMenu }) => {
           </style>
         </div>
       </div>
+
     </>
   );
 }

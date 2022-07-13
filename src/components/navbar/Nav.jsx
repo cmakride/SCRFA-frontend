@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react';
 import HamburgerDropDownMenu from './components/HamburgerDropDownMenu';
+import HamburgerMobileDropDownMenu from './components/HamburgerMobileDropDownMenu';
 import SearchDropDownMenu from './components/SearchDropDownMenu';
 import logo from '../../assets/rfa-logo.png'
 import { FaSearch } from 'react-icons/fa'
@@ -9,6 +10,7 @@ const Nav = () => {
 
   const [isNavOpen, setIsNavOpen] = useState(false)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
+  
 
   const closeDropDownMenu = () => {
     setIsNavOpen(false)
@@ -22,7 +24,7 @@ const Nav = () => {
 
         {/* Hamburger Drop Down Menu */}
         <div className='flex'>
-          <div className="HAMBURGER-ICON flex flex-col gap-1.5 justify-center items-center bg-row1-4 w-24 h-32 hover:bg-row1-3" onClick={() => setIsNavOpen((prev) => !prev)}>
+          <div className="select-none HAMBURGER-ICON flex flex-col gap-1.5 justify-center items-center bg-row1-4 w-24 h-32 hover:bg-row1-3" onClick={() => setIsNavOpen((prev) => !prev)}>
             {isNavOpen ?
               <>
                 <svg
@@ -51,9 +53,14 @@ const Nav = () => {
           <div id={isNavOpen ? "showMenuNav" : "hideMenuNav"} className="border-b-8 border-row1-3">
             <HamburgerDropDownMenu closeDropDownMenu={closeDropDownMenu} />
           </div>
+          {/* Only to be shown on Mobile Devices */}
+          <div id={isNavOpen ? "showMobileMenuNav" : "hideMobileMenuNav"} className={`top-[127px] left-0 w-full h-0 bg-row4-7 absolute z-10
+      `}>
+            <HamburgerMobileDropDownMenu isNavOpen={isNavOpen} closeDropDownMenu={closeDropDownMenu} />
+          </div>
           {/* End Hambuger Div */}
 
-          <div id="Logo-with-title" className="flex gap-4 items-center justify-between">
+          <div id="Logo-with-title" className="select-none flex gap-4 items-center justify-between">
 
             <NavLink to="/">
               <img src={logo} className="ml-2 w-14 lg:w-28 lg:ml-8 hover:opacity-40 duration-100" alt="" />
@@ -110,12 +117,24 @@ const Nav = () => {
       right: 10px;
 
     }
+    #showMobileMenuNav{
+      display:flex;
+      height: 42rem;
+      overflow: hidden;
+      transition: height 0.3s;
+
+    }
     #hideSearchNav {
       display: none;
     }
 
     #hideMenuNav {
       display: none;
+    }
+    #hideMobileMenuNav{
+      overflow: hidden;
+      height: 0px;
+      transition: height 0.3s;
     }
     #showMenuNav {
       display: block;
@@ -139,18 +158,20 @@ const Nav = () => {
     }
     @media screen and (max-width:640px){
       #showMenuNav{
-        display: grid; 
-        grid-template-columns: 1fr; 
-        grid-template-rows: 0.7fr 1.3fr; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-        "options"
-        "services";
+        display: none; 
         
       }
       #showSearchNav{
         right: 0px;
         width: 320px;
+      }
+    }
+    @media screen and (min-width:640px){
+      #showMobileMenuNav{
+        display: none;
+      }
+      #hideMobileMenuNav{
+        display: none;
       }
     }
   `}</style>
