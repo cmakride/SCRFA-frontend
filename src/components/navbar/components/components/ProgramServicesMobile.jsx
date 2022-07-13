@@ -1,18 +1,30 @@
 import { NavLink } from 'react-router-dom'
 import { BiDownArrow } from 'react-icons/bi'
 
-const LegislativeFiscalImpactsMobile = ({ dropDownLFI, toggleDropDownLFI }) => {
+const ProgramServicesMobile = ({ dropDownPS, toggleDropDownPS }) => {
   const legislativeFiscalImpacts = [
     {
-      name: "current general assembly session",
+      name: "precinct demographics and redistricting",
       link: "/"
     },
     {
-      name: "previous general assembly session",
+      name: "state 911 program",
       link: "/"
     },
     {
-      name: "forms",
+      name: "data services and online solutions",
+      link: "/"
+    },
+    {
+      name: "geodetic survey",
+      link: "/"
+    },
+    {
+      name: "fiscal analysis",
+      link: "/"
+    },
+    {
+      name: "2020 census",
       link: "/"
     }
   ]
@@ -22,17 +34,18 @@ const LegislativeFiscalImpactsMobile = ({ dropDownLFI, toggleDropDownLFI }) => {
     <>
       <div id="dropdown-wrapper" className='' >
         <button type="button"
-          onClick={() => toggleDropDownLFI()} className="flex items-center w-full capitalize text-xl font-bold text-row1-3"
+          onClick={() => toggleDropDownPS()} className="flex items-center w-full capitalize text-xl font-bold text-row1-3"
         >
-          legislative & fiscal impacts
-          <BiDownArrow className={`w-5 h-5 -rotate-90 transition-transform ease-in-out ${dropDownLFI ? "rotate-0" : "-rotate-90"}`} />
+          programs & services
+          <BiDownArrow className={`w-5 h-5 -rotate-90 transition-transform ease-in-out ${dropDownPS ? "rotate-0" : "-rotate-90"}`} />
         </button>
 
-        {dropDownLFI &&
+        {dropDownPS &&
 
           <div id='dropdown' className='text-row4-2 bg-row4-7 capitalize p-2 flex flex-col'>
             {legislativeFiscalImpacts.map((service, idx) => (
               <p key={idx}>
+                
                 <NavLink
                   to="/"
                   className="hover:text-row3-1 duration-300">
@@ -63,4 +76,4 @@ const LegislativeFiscalImpactsMobile = ({ dropDownLFI, toggleDropDownLFI }) => {
   );
 }
 
-export default LegislativeFiscalImpactsMobile;
+export default ProgramServicesMobile;

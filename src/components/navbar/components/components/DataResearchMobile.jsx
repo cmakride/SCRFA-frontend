@@ -54,9 +54,8 @@ const DataResearchMobile = ({ dropDownDR, toggleDropDownDR }) => {
 
           <div id='dropdown' className='text-row4-2 bg-row4-7 capitalize p-2 flex flex-col'>
             {dataResearch.map((service, idx) => (
-              <p >
+              <p key={idx}>
                 <NavLink
-                  key={idx}
                   to="/"
                   className="hover:text-row3-1 duration-300">
                   {service.name}

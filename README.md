@@ -120,11 +120,19 @@ At about 5:00-6:15 started building out the Recent Updates Component and the Cal
 #### 
 1. ~~Once get back will update nav dropdown mobile menu for grid styling maybe do flex col normally and grid on desktop.~~
 2. Make the banner hover icons 2X2 grid on medium 
-3. Fix Search Bars on Mobile. 
+3. ~~Fix Search Bars on Mobile.~~
 4. ~~Make components from what says in the feedback~~
 5. ~~Animation for Drop down Menu mobile~~
 6. search bar dropdown full screen for all mobile not just at 320px
 7. ~~tweak responsiveness on nav menu~~
+
+### July 4 - July 14:
+Wanted to note what I have done since the feedback, have made some style changes to the nav bar to make it more responsive. Attempted to improve layout flow of megamenu on desktop.
+Cleaned up the code to make it less repetitive especially with the classNames that utilize tailwind. Used text-transform on specific text to capitalize or make uppercase instead of relying on format of content. Updated the footer. Main goals were to minimize repetitive boilerplate in the code which was significantly improved in the footer component, also updated it in the hamburgerdropdown menu. Another goal was to improve the hamburger drop down menu for mobile to make it more practical. This can be seen when the screen is 640px or smaller. The dropdown megamenu changes to a different format specifically for mobile. <br/>
+
+Going further I would update my future plans section to make tests using react testing library for specific components to make sure core components are working as they should. 
+Would also improve the navbar components especially for the mobile menu so can just place as props the data, title, with name of links. So can make more efficient code. 
+
  
 
 

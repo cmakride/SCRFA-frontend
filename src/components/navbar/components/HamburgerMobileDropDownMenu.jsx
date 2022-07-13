@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 import DataResearchMobile from './components/DataResearchMobile';
 import GeographicMappingMobile from './components/GeographyMappingMobile';
 import LegislativeFiscalImpactsMobile from './components/LegislativeFiscalImpactsMobile';
+import ProgramServicesMobile from './components/ProgramServicesMobile';
 import { useState } from 'react';
 
 const HamburgerMobileDropDownMenu = ({ closeDropDownMenu, isNavOpen }) => {
@@ -32,6 +33,7 @@ const HamburgerMobileDropDownMenu = ({ closeDropDownMenu, isNavOpen }) => {
   const [dropDownDR, setDropDownDR] = useState(false);
   const [dropDownGM, setDropDownGM] = useState(false);
   const [dropDownLFI, setDropDownLFI] = useState(false);
+  const [dropDownPS, setDropDownPS] = useState(false);
 
   const toggleDropDownDR = ()=>{
     setDropDownGM(false)
@@ -50,6 +52,13 @@ const HamburgerMobileDropDownMenu = ({ closeDropDownMenu, isNavOpen }) => {
     setDropDownDR(false)
     setDropDownGM(false)
     setDropDownLFI(!dropDownLFI)
+  }
+
+  const toggleDropDownPS = ()=>{
+    setDropDownDR(false)
+    setDropDownGM(false)
+    setDropDownLFI(false)
+    setDropDownPS(!dropDownPS)
   }
 
 
@@ -72,6 +81,7 @@ const HamburgerMobileDropDownMenu = ({ closeDropDownMenu, isNavOpen }) => {
         <DataResearchMobile dropDownDR={dropDownDR} toggleDropDownDR={toggleDropDownDR}/>
         <GeographicMappingMobile dropDownGM={dropDownGM}
         toggleDropDownGM={toggleDropDownGM}/>
+        <ProgramServicesMobile dropDownPS={dropDownPS} toggleDropDownPS={toggleDropDownPS}/>
         <LegislativeFiscalImpactsMobile dropDownLFI={dropDownLFI} toggleDropDownLFI={toggleDropDownLFI}/> 
 
       </div>
