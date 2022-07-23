@@ -38,6 +38,7 @@ const HamburgerMobileDropDownMenu = ({ closeDropDownMenu, isNavOpen }) => {
   const toggleDropDownDR = ()=>{
     setDropDownGM(false)
     setDropDownLFI(false)
+    setDropDownPS(false)
     setDropDownDR(!dropDownDR)
   }
 
@@ -45,12 +46,14 @@ const HamburgerMobileDropDownMenu = ({ closeDropDownMenu, isNavOpen }) => {
   const toggleDropDownGM = ()=>{
     setDropDownDR(false)
     setDropDownLFI(false)
+    setDropDownPS(false)
     setDropDownGM(!dropDownGM)
   }
 
   const toggleDropDownLFI = ()=>{
     setDropDownDR(false)
     setDropDownGM(false)
+    setDropDownPS(false)
     setDropDownLFI(!dropDownLFI)
   }
 
